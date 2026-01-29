@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "title": "Rose Blossom",
+        "category": "Menyasszonyi Ruha",
+        "frontImage": "/images/bridal-1a.jpg",
+        "backImages": [
+            "/images/bridal-1b.jpg"
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Silk Elegance",
+        "category": "Estélyi Ruha",
+        "frontImage": "/images/bridal-2a.jpg",
+        "backImages": [
+            "/images/bridal-2b.jpg"
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Midnight Velvet",
+        "category": "Különleges Alkalom",
+        "frontImage": "/images/bridal-3a.jpg",
+        "backImages": [
+            "/images/bridal-3b.jpg"
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Summer Breeze",
+        "category": "Könnyed Stílus",
+        "frontImage": "/images/bridal-4a.jpg",
+        "backImages": [
+            "/images/bridal-4b.jpg"
+        ]
+    },
+    {
+        "id": "5",
+        "title": "Royal Lace",
+        "category": "Klasszikus Elegancia",
+        "frontImage": "/images/bridal-5a.jpg",
+        "backImages": [
+            "/images/bridal-5b.jpg"
+        ]
+    },
+    {
+        "id": "6",
+        "title": "Modern Muse",
+        "category": "Minimalista Design",
+        "frontImage": "/images/bridal-6a.jpg",
+        "backImages": [
+            "/images/bridal-6b.jpg"
+        ]
+    }
+]

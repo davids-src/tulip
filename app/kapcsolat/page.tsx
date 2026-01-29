@@ -110,23 +110,6 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="bg-tulip-red/10 p-4 rounded-lg">
-                  <Clock className="w-6 h-6 text-tulip-red" />
-                </div>
-                <div>
-                  <p className="font-semibold text-tulip-black text-lg mb-1">
-                    Nyitvatartás
-                  </p>
-                  <p className="text-gray-600 text-lg">
-                    Hétfő – Péntek: 10:00 – 18:00<br />
-                    Szombat – Vasárnap: Zárva
-                  </p>
-                  <p className="text-tulip-red text-sm mt-2 font-medium">
-                    *Előzetes időpontfoglalás szükséges
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="bg-tulip-light-gray p-8 rounded-lg">

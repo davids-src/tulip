@@ -1,17 +1,13 @@
-import HeroSection from '@/components/HeroSection';
-import PortfolioPreview from '@/components/PortfolioPreview';
-import ServicesSection from '@/components/ServicesSection';
-import AboutUs from '@/components/AboutUs';
+import CollectionFlipGrid from '@/components/CollectionFlipGrid';
+import SkateNightPromo from '@/components/SkateNightPromo';
 import ContactSection from '@/components/ContactSection';
 
 export default function Home() {
   return (
-    <>
-      <HeroSection />
-      <PortfolioPreview />
-      <ServicesSection />
-      <AboutUs />
+    <main>
+      <CollectionFlipGrid />
+      <SkateNightPromo />
       <ContactSection />
-    </>
+    </main>
   );
 }
