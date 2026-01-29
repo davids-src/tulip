@@ -2,9 +2,10 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Home, LayoutGrid, Sun, Moon } from 'lucide-react';
+import { Menu, X, Home, LayoutGrid, PenLine, FileText, Users, Mail, Sun, Moon } from 'lucide-react';
 import { useState } from 'react';
 import { useTheme } from './ThemeProvider';
+import LanguageSelector from './LanguageSelector';
 
 export default function Header() {
   const pathname = usePathname();
@@ -14,59 +15,74 @@ export default function Header() {
   const menuItems = [
     { label: 'Kezdőlap', href: '/', icon: Home },
     { label: 'Kollekció', href: '/kollekcio', icon: LayoutGrid },
-    { label: 'Történetem', href: '/tortenetem', icon: null },
-    { label: 'Blog', href: '/blog', icon: null },
-    { label: 'Partnereim', href: '/partnereim', icon: null },
-    { label: 'Kapcsolat', href: '/kapcsolat', icon: null },
+    { label: 'Történetem', href: '/tortenetem', icon: PenLine },
+    { label: 'Blog', href: '/blog', icon: FileText },
+    { label: 'Partnereim', href: '/partnereim', icon: Users },
+    { label: 'Kapcsolat', href: '/kapcsolat', icon: Mail },
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 dark:bg-[#0B0B0B]/80 backdrop-blur-md border-b border-black/5 dark:border-white/10 transition-all duration-300">
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border transition-all duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
+          {/* Brand section */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 border-2 border-tulip-red flex items-center justify-center text-[10px] text-black/40 dark:text-white/40 uppercase font-bold tracking-tighter transition-colors">
-              Logo
+            <div className="w-10 h-10 border border-brand-fuchsia flex items-center justify-center transition-colors">
+              <div className="w-6 h-6 bg-brand-fuchsia rounded-full opacity-20" /> {/* Logo slot placeholder */}
             </div>
-            <span className="text-2xl font-heading font-extrabold text-black dark:text-white tracking-widest uppercase group-hover:text-tulip-red transition-colors">
+            <span className="text-2xl font-rubik font-light text-foreground tracking-[0.2em] uppercase transition-colors">
               TULIP
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center space-x-6">
-            {menuItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`flex items-center space-x-2 text-sm font-bold uppercase tracking-wider transition-all hover:text-tulip-red ${pathname === item.href
-                    ? 'text-tulip-red underline underline-offset-8 decoration-2'
-                    : 'text-black dark:text-white'
-                  }`}
-              >
-                {item.icon && <item.icon size={18} />}
-                <span>{item.label}</span>
-              </Link>
-            ))}
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            <div className="flex items-center space-x-6">
+              {menuItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`flex items-center space-x-2 text-xs font-rubik font-light uppercase tracking-widest transition-all hover:text-brand-fuchsia ${pathname === item.href ? 'text-brand-fuchsia' : 'text-foreground'
+                    }`}
+                >
+                  {item.icon && <item.icon size={16} />}
+                  <span>{item.label}</span>
+                </Link>
+              ))}
+            </div>
 
-            <button
-              onClick={toggleTheme}
-              className="ml-4 p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-black dark:text-white"
-              aria-label="Toggle theme"
+            {/* Special Field: SKATE NIGHT */}
+            <Link
+              href="/skate-night"
+              className="px-4 py-2 border border-brand-fuchsia bg-background text-brand-fuchsia text-xs font-rubik font-light uppercase tracking-widest hover:bg-brand-fuchsia hover:text-white transition-all"
             >
-              {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
-            </button>
+              SKATE NIGHT
+            </Link>
+
+            {/* Toggles */}
+            <div className="flex items-center space-x-2 ml-4">
+              <button
+                onClick={toggleTheme}
+                className="p-2 hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-foreground"
+                aria-label="Toggle theme"
+              >
+                {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+              </button>
+              <LanguageSelector />
+            </div>
           </nav>
 
+          {/* Mobile controls */}
           <div className="lg:hidden flex items-center space-x-4">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-black dark:text-white"
+              className="p-2 hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-foreground"
               aria-label="Toggle theme"
             >
               {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
             </button>
             <button
-              className="text-black dark:text-white hover:text-tulip-red transition-colors"
+              className="text-foreground hover:text-brand-fuchsia transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -78,7 +94,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden absolute top-20 left-0 w-full bg-white/95 dark:bg-[#0B0B0B]/95 backdrop-blur-xl border-b border-black/5 dark:border-white/10 overflow-hidden transition-all duration-300 ease-in-out ${mobileMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+        className={`lg:hidden absolute top-20 left-0 w-full bg-background/95 backdrop-blur-xl border-b border-border overflow-hidden transition-all duration-300 ease-in-out ${mobileMenuOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
           }`}
       >
         <nav className="container mx-auto px-6 py-8 flex flex-col space-y-6">
@@ -87,15 +103,24 @@ export default function Header() {
               key={item.href}
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
-              className={`flex items-center space-x-4 text-lg font-bold uppercase tracking-widest transition-colors ${pathname === item.href
-                  ? 'text-tulip-red'
-                  : 'text-black dark:text-white hover:text-tulip-red'
+              className={`flex items-center space-x-4 text-sm font-rubik font-light uppercase tracking-widest transition-colors ${pathname === item.href ? 'text-brand-fuchsia' : 'text-foreground hover:text-brand-fuchsia'
                 }`}
             >
-              {item.icon && <item.icon size={22} />}
+              {item.icon && <item.icon size={20} />}
               <span>{item.label}</span>
             </Link>
           ))}
+          <Link
+            href="/skate-night"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-center px-4 py-3 border border-brand-fuchsia text-brand-fuchsia text-sm font-rubik font-light uppercase tracking-widest hover:bg-brand-fuchsia hover:text-brand-light transition-all"
+          >
+            SKATE NIGHT
+          </Link>
+          <div className="pt-4 border-t border-border flex justify-between items-center">
+            <span className="text-xs font-rubik font-light uppercase tracking-widest">Language</span>
+            <LanguageSelector />
+          </div>
         </nav>
       </div>
     </header>

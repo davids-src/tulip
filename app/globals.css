@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,19 +6,19 @@
 
 @layer base {
   :root {
-    --tulip-red: #C8102E;
-    --tulip-black: #0B0B0B;
-    --tulip-dark-gray: #1F1F1F;
-    --tulip-light-gray: #F5F5F5;
-    --tulip-mid-gray: #BBBBBB;
+    --background: 48 100% 98%; /* #fffdf5 approx */
+    --foreground: 0 0% 11%; /* #1d1d1b approx */
+    
+    --brand-light: 48 100% 98%;
+    --brand-dark: 0 0% 11%;
+    --accent-fuchsia: 328 66% 50%; /* #d62b85 */
+    --accent-coral: 350 85% 44%; /* #d11133 */
 
-    --background: 0 0% 100%;
-    --foreground: 0 0% 4.3%;
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 4.3%;
+    --card-foreground: 0 0% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 4.3%;
-    --primary: 348 85% 42%;
+    --popover-foreground: 0 0% 11%;
+    --primary: 328 66% 50%;
     --primary-foreground: 0 0% 100%;
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
@@ -30,18 +30,19 @@
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
-    --ring: 348 85% 42%;
-    --radius: 0.5rem;
+    --ring: 328 66% 50%;
+    --radius: 0rem; /* Square corners per PDF rule */
   }
 
   .dark {
-    --background: 0 0% 4.3%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 4.3%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 4.3%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 348 85% 42%;
+    --background: 0 0% 11%; /* #1d1d1b */
+    --foreground: 48 100% 98%; /* #fffdf5 */
+    
+    --card: 0 0% 11%;
+    --card-foreground: 48 100% 98%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 48 100% 98%;
+    --primary: 328 66% 50%;
     --primary-foreground: 0 0% 100%;
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
@@ -53,7 +54,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 348 85% 42%;
+    --ring: 328 66% 50%;
   }
 }
 
@@ -63,9 +64,13 @@
   }
 
   body {
-    @apply bg-background text-foreground font-body transition-colors;
+    @apply bg-background text-foreground font-inter transition-colors;
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  a {
+    @apply no-underline transition-colors;
   }
 
   h1,
@@ -74,7 +79,7 @@
   h4,
   h5,
   h6 {
-    @apply font-heading text-foreground;
+    @apply font-inter font-light uppercase tracking-[0.35em] text-[#d62b85];
     line-height: 1.2;
   }
 

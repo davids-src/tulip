@@ -10,16 +10,17 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['Playfair Display', 'serif'],
-        body: ['Inter', 'sans-serif'],
+        rubik: ['var(--font-rubik)', 'sans-serif'],
+        inter: ['var(--font-inter)', 'sans-serif'],
+        heading: ['var(--font-inter)', 'sans-serif'],
+        body: ['var(--font-inter)', 'sans-serif'],
       },
       colors: {
-        tulip: {
-          red: '#C8102E',
-          black: '#0B0B0B',
-          'dark-gray': '#1F1F1F',
-          'light-gray': '#F5F5F5',
-          'mid-gray': '#BBBBBB',
+        brand: {
+          light: '#fffdf5',
+          dark: '#1d1d1b',
+          fuchsia: '#d62b85',
+          coral: '#d11133',
         },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

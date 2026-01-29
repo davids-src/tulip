@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Inter, Rubik } from 'next/font/google';
 import ClientLayout from '@/components/ClientLayout';
 
 const inter = Inter({
@@ -8,9 +8,9 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const playfair = Playfair_Display({
+const rubik = Rubik({
   subsets: ['latin'],
-  variable: '--font-playfair',
+  variable: '--font-rubik',
 });
 
 export const metadata: Metadata = {
@@ -38,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="hu" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang="hu" className={`${inter.variable} ${rubik.variable}`} suppressHydrationWarning>
+      <body className={`${inter.className} selection:bg-brand-fuchsia selection:text-white`}>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

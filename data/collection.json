@@ -1,56 +1,38 @@
 [
     {
-        "id": "1",
-        "title": "Rose Blossom",
-        "category": "Menyasszonyi Ruha",
-        "frontImage": "/images/bridal-1a.jpg",
-        "backImages": [
-            "/images/bridal-1b.jpg"
-        ]
+        "id": "sport",
+        "frontImage": "/images/collection/sport-front.jpg",
+        "logoLight": "/images/logos/logo-sport-feher-alapon.svg",
+        "logoDark": "/images/logos/logo-sport-fekete-alapon.svg"
     },
     {
-        "id": "2",
-        "title": "Silk Elegance",
-        "category": "Estélyi Ruha",
-        "frontImage": "/images/bridal-2a.jpg",
-        "backImages": [
-            "/images/bridal-2b.jpg"
-        ]
+        "id": "costume",
+        "frontImage": "/images/collection/costume-front.jpg",
+        "logoLight": "/images/logos/logo-costume-feher-alapon.svg",
+        "logoDark": "/images/logos/logo-costume-fekete-alapon.svg"
     },
     {
-        "id": "3",
-        "title": "Midnight Velvet",
-        "category": "Különleges Alkalom",
-        "frontImage": "/images/bridal-3a.jpg",
-        "backImages": [
-            "/images/bridal-3b.jpg"
-        ]
+        "id": "night",
+        "frontImage": "/images/collection/night-front.jpg",
+        "logoLight": "/images/logos/logo-night-feher-alapon.svg",
+        "logoDark": "/images/logos/logo-night-fekete-alapon.svg"
     },
     {
-        "id": "4",
-        "title": "Summer Breeze",
-        "category": "Könnyed Stílus",
-        "frontImage": "/images/bridal-4a.jpg",
-        "backImages": [
-            "/images/bridal-4b.jpg"
-        ]
+        "id": "event",
+        "frontImage": "/images/collection/event-front.jpg",
+        "logoLight": "/images/logos/logo-event-feher-alapon.svg",
+        "logoDark": "/images/logos/logo-event-fekete-alapon.svg"
     },
     {
-        "id": "5",
-        "title": "Royal Lace",
-        "category": "Klasszikus Elegancia",
-        "frontImage": "/images/bridal-5a.jpg",
-        "backImages": [
-            "/images/bridal-5b.jpg"
-        ]
+        "id": "wedding",
+        "frontImage": "/images/collection/wedding-front.jpg",
+        "logoLight": "/images/logos/logo-wedding-feher-alapon.svg",
+        "logoDark": "/images/logos/logo-wedding-fekete-alapon.svg"
     },
     {
-        "id": "6",
-        "title": "Modern Muse",
-        "category": "Minimalista Design",
-        "frontImage": "/images/bridal-6a.jpg",
-        "backImages": [
-            "/images/bridal-6b.jpg"
-        ]
+        "id": "diamond",
+        "frontImage": "/images/collection/diamond-front.jpg",
+        "logoLight": "/images/logos/logo-diamond-feher-alapon.svg",
+        "logoDark": "/images/logos/logo-diamond-fekete-alapon.svg"
     }
 ]

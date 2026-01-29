@@ -31,75 +31,58 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="py-24 bg-gray-50 dark:bg-[#0B0B0B] transition-colors">
+    <section className="py-24 bg-background transition-colors">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-black dark:text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.35em] mb-4">
             Kapcsolat
           </h2>
-          <div className="w-20 h-1.5 bg-tulip-red mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 dark:text-tulip-mid-gray max-w-2xl mx-auto">
-            Foglalj időpontot vagy küldj üzenetet
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
-          <div>
-            <h3 className="text-2xl font-heading font-bold text-black dark:text-white mb-8">
-              Vedd fel velünk a kapcsolatot
+          {/* Left Side: Contact Info */}
+          <div className="space-y-12">
+            <h3 className="text-xl md:text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8">
+              Kérdésed van? Vedd fel velem a kapcsolatot!
             </h3>
-            <div className="space-y-8">
-              <div className="flex items-start space-x-5">
-                <div className="bg-tulip-red/10 p-4 rounded-2xl shrink-0">
-                  <Phone className="w-6 h-6 text-tulip-red" />
-                </div>
-                <div>
-                  <p className="font-bold text-black dark:text-white text-lg mb-1">Telefon</p>
-                  <a
-                    href="tel:+36301234567"
-                    className="text-gray-600 dark:text-tulip-mid-gray hover:text-tulip-red transition-colors text-lg"
-                  >
-                    +36 30 123 4567
-                  </a>
-                </div>
+
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <Phone size={22} className="text-brand-fuchsia shrink-0" />
+                <a
+                  href="tel:+36302543373"
+                  className="text-foreground font-rubik font-light hover:text-brand-fuchsia transition-colors text-lg"
+                >
+                  +36 30 254 3373
+                </a>
               </div>
 
-              <div className="flex items-start space-x-5">
-                <div className="bg-tulip-red/10 p-4 rounded-2xl shrink-0">
-                  <Mail className="w-6 h-6 text-tulip-red" />
-                </div>
-                <div>
-                  <p className="font-bold text-black dark:text-white text-lg mb-1">Email</p>
-                  <a
-                    href="mailto:info@tulipcouture.hu"
-                    className="text-gray-600 dark:text-tulip-mid-gray hover:text-tulip-red transition-colors text-lg"
-                  >
-                    info@tulipcouture.hu
-                  </a>
-                </div>
+              <div className="flex items-center space-x-4">
+                <Mail size={22} className="text-brand-fuchsia shrink-0" />
+                <a
+                  href="mailto:info@tulip.hu"
+                  className="text-foreground font-rubik font-light hover:text-brand-fuchsia transition-colors text-lg"
+                >
+                  info@tulip.hu
+                </a>
               </div>
 
-              <div className="flex items-start space-x-5">
-                <div className="bg-tulip-red/10 p-4 rounded-2xl shrink-0">
-                  <MapPin className="w-6 h-6 text-tulip-red" />
-                </div>
-                <div>
-                  <p className="font-bold text-black dark:text-white text-lg mb-1">Cím</p>
-                  <p className="text-gray-600 dark:text-tulip-mid-gray text-lg leading-relaxed">
-                    1052 Budapest<br />
-                    Petőfi Sándor utca 12.
-                  </p>
-                </div>
+              <div className="flex items-center space-x-4">
+                <MapPin size={22} className="text-brand-fuchsia shrink-0" />
+                <span className="text-foreground font-rubik font-light text-lg">
+                  HU, 8000 Székesfehérvár
+                </span>
               </div>
             </div>
           </div>
 
-          <div className="bg-white dark:bg-[#151515] rounded-[2.5rem] p-10 shadow-2xl shadow-black/5 dark:shadow-none border border-black/5 dark:border-white/5">
+          {/* Right Side: Form */}
+          <div className="bg-background border border-border p-8 md:p-10 rounded-none shadow-none">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-bold text-black dark:text-white mb-2 uppercase tracking-wider"
+                  className="block text-xs font-rubik font-medium text-[#d11133] mb-2 uppercase tracking-widest"
                 >
                   Név
                 </label>
@@ -110,7 +93,7 @@ export default function ContactSection() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 py-4 border border-black/10 dark:border-white/10 bg-transparent text-black dark:text-white rounded-2xl focus:ring-2 focus:ring-tulip-red focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-border bg-background text-foreground rounded-none focus:outline-none focus:ring-1 focus:ring-brand-fuchsia transition-all"
                   placeholder="Kovács Anna"
                 />
               </div>
@@ -118,7 +101,7 @@ export default function ContactSection() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-bold text-black dark:text-white mb-2 uppercase tracking-wider"
+                  className="block text-xs font-rubik font-medium text-[#d11133] mb-2 uppercase tracking-widest"
                 >
                   E-mail
                 </label>
@@ -129,7 +112,7 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 py-4 border border-black/10 dark:border-white/10 bg-transparent text-black dark:text-white rounded-2xl focus:ring-2 focus:ring-tulip-red focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-border bg-background text-foreground rounded-none focus:outline-none focus:ring-1 focus:ring-brand-fuchsia transition-all"
                   placeholder="anna@example.com"
                 />
               </div>
@@ -137,7 +120,7 @@ export default function ContactSection() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-bold text-black dark:text-white mb-2 uppercase tracking-wider"
+                  className="block text-xs font-rubik font-medium text-[#d11133] mb-2 uppercase tracking-widest"
                 >
                   Üzenet
                 </label>
@@ -147,23 +130,23 @@ export default function ContactSection() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={5}
-                  className="w-full px-5 py-4 border border-black/10 dark:border-white/10 bg-transparent text-black dark:text-white rounded-2xl focus:ring-2 focus:ring-tulip-red focus:border-transparent outline-none transition-all resize-none"
-                  placeholder="Miben segíthetek?"
+                  rows={4}
+                  className="w-full px-4 py-3 border border-border bg-background text-foreground rounded-none focus:outline-none focus:ring-1 focus:ring-brand-fuchsia transition-all resize-none"
+                  placeholder="Írj üzenetet..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-tulip-red text-white px-8 py-5 rounded-2xl font-bold text-xl hover:opacity-90 transition-all transform active:scale-95 shadow-lg shadow-tulip-red/20"
+                className="w-full bg-[#d62b85] text-white dark:text-brand-dark px-8 py-4 rounded-none font-rubik font-light text-sm uppercase tracking-widest hover:opacity-90 transition-all active:scale-95"
               >
                 Üzenet küldése
               </button>
 
               {submitted && (
-                <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-2xl">
-                  <p className="text-center text-green-600 dark:text-green-400 font-bold">
-                    Köszönjük! Hamarosan jelentkezünk.
+                <div className="p-4 bg-brand-fuchsia/10 border border-brand-fuchsia/20">
+                  <p className="text-center text-brand-fuchsia font-rubik font-light text-sm">
+                    Köszönjük! Üzenetedet megkaptuk.
                   </p>
                 </div>
               )}
