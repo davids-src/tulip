@@ -50,7 +50,7 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`flex items-center space-x-2 text-xs font-rubik font-light uppercase tracking-widest transition-all hover:text-brand-fuchsia ${pathname === item.href ? 'text-brand-fuchsia' : 'text-foreground'
+                  className={`flex items-center space-x-2 text-xs font-rubik font-light uppercase tracking-widest transition-all hover:text-brand-coral ${pathname === item.href ? 'text-brand-coral' : 'text-foreground'
                     }`}
                 >
                   {item.icon && <item.icon size={16} />}
@@ -62,7 +62,7 @@ export default function Header() {
             {/* Special Field: SKATE NIGHT */}
             <Link
               href="/skate-night"
-              className="px-4 py-2 border border-brand-fuchsia bg-background text-brand-fuchsia text-xs font-rubik font-light uppercase tracking-widest hover:bg-brand-fuchsia hover:text-brand-light dark:hover:text-brand-dark transition-all"
+              className="px-4 py-2 border border-brand-coral bg-background text-brand-coral text-xs font-rubik font-light uppercase tracking-widest hover:bg-brand-coral hover:text-brand-light dark:hover:text-brand-dark transition-all"
             >
               SKATE NIGHT
             </Link>
@@ -71,7 +71,7 @@ export default function Header() {
             <div className="flex items-center space-x-2 ml-4">
               <button
                 onClick={toggleTheme}
-                className="p-2 hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-foreground"
+                className="p-2 text-foreground hover:text-brand-coral active:text-brand-coral transition-colors"
                 aria-label="Toggle theme"
               >
                 {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
@@ -84,13 +84,13 @@ export default function Header() {
           <div className="lg:hidden flex items-center space-x-4">
             <button
               onClick={toggleTheme}
-              className="p-2 hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-foreground"
+              className="p-2 text-foreground hover:text-brand-coral active:text-brand-coral transition-colors"
               aria-label="Toggle theme"
             >
               {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
             </button>
             <button
-              className="text-foreground hover:text-brand-fuchsia transition-colors"
+              className="text-foreground hover:text-brand-coral active:text-brand-coral transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -111,7 +111,7 @@ export default function Header() {
               key={item.href}
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
-              className={`flex items-center space-x-4 text-sm font-rubik font-light uppercase tracking-widest transition-colors ${pathname === item.href ? 'text-brand-fuchsia' : 'text-foreground hover:text-brand-fuchsia'
+              className={`flex items-center space-x-4 text-sm font-rubik font-light uppercase tracking-widest transition-colors ${pathname === item.href ? 'text-brand-coral' : 'text-foreground hover:text-brand-coral'
                 }`}
             >
               {item.icon && <item.icon size={20} />}
@@ -121,7 +121,7 @@ export default function Header() {
           <Link
             href="/skate-night"
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-center px-4 py-3 border border-brand-fuchsia text-brand-fuchsia text-sm font-rubik font-light uppercase tracking-widest hover:bg-brand-fuchsia hover:text-brand-light dark:hover:text-brand-dark transition-all"
+            className="block text-center px-4 py-3 border border-brand-coral text-brand-coral text-sm font-rubik font-light uppercase tracking-widest hover:bg-brand-coral hover:text-brand-light dark:hover:text-brand-dark transition-all"
           >
             SKATE NIGHT
           </Link>

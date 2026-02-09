@@ -1,19 +1,19 @@
 [
     {
         "id": "sport",
-        "frontImage": "/images/collection/sport-front.jpg",
+        "frontImage": "/images/3.jpg",
         "logoLight": "/images/logos/logo-sport-feher-alapon.svg",
         "logoDark": "/images/logos/logo-sport-fekete-alapon.svg"
     },
     {
         "id": "costume",
-        "frontImage": "/images/collection/costume-front.jpg",
+        "frontImage": "/images/2.jpg",
         "logoLight": "/images/logos/logo-costume-feher-alapon.svg",
         "logoDark": "/images/logos/logo-costume-fekete-alapon.svg"
     },
     {
         "id": "night",
-        "frontImage": "/images/collection/night-front.jpg",
+        "frontImage": "/images/1.jpg",
         "logoLight": "/images/logos/logo-night-feher-alapon.svg",
         "logoDark": "/images/logos/logo-night-fekete-alapon.svg"
     },

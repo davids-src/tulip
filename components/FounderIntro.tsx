@@ -26,7 +26,7 @@ export default function FounderIntro() {
 
                     {/* Text Content */}
                     <div>
-                        <h1 className="text-5xl md:text-6xl font-rubik font-medium mb-8 text-[#d11133] leading-tight uppercase">
+                        <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-8">
                             Történetem
                         </h1>
                         <div className="w-24 h-1.5 bg-brand-fuchsia mb-10"></div>

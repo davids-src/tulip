@@ -22,7 +22,7 @@ export default function FlipCard({ frontImage, logoLight, logoDark }: FlipCardPr
 
     return (
         <div
-            className="group perspective-1000 w-full aspect-square cursor-pointer"
+            className="group perspective-1000 w-full aspect-[3/4] cursor-pointer"
             onMouseEnter={() => setIsFlipped(true)}
             onMouseLeave={() => setIsFlipped(false)}
             onFocus={() => setIsFlipped(true)}
@@ -37,7 +37,7 @@ export default function FlipCard({ frontImage, logoLight, logoDark }: FlipCardPr
                     }`}
             >
                 {/* Front Side */}
-                <div className="absolute inset-0 w-full h-full backface-hidden rounded-none overflow-hidden border border-border">
+                <div className="absolute inset-0 w-full h-full backface-hidden rounded-none overflow-hidden border border-border bg-background">
                     <Image
                         src={frontImage}
                         alt="Collection item photo"

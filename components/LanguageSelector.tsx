@@ -31,10 +31,10 @@ export default function LanguageSelector() {
         <div className="relative">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2 flex items-center space-x-1 hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-foreground uppercase text-xs tracking-widest font-rubik font-light"
+                className="p-2 flex items-center space-x-1 text-foreground hover:text-brand-coral active:text-brand-coral transition-colors uppercase text-xs tracking-widest font-rubik font-light"
                 aria-label="Select language"
             >
-                <Globe size={18} className="text-brand-fuchsia" />
+                <Globe size={18} className="text-brand-coral" />
                 <span>{currentLang}</span>
             </button>
 
@@ -44,7 +44,7 @@ export default function LanguageSelector() {
                         <button
                             key={lang.code}
                             onClick={() => handleLanguageChange(lang.code)}
-                            className={`block w-full text-left px-4 py-2 text-xs uppercase tracking-widest font-rubik font-light transition-colors hover:bg-brand-fuchsia hover:text-white ${currentLang === lang.code ? 'text-brand-fuchsia' : 'text-foreground'
+                            className={`block w-full text-left px-4 py-2 text-xs uppercase tracking-widest font-rubik font-light transition-colors hover:bg-brand-coral hover:text-white ${currentLang === lang.code ? 'text-brand-coral' : 'text-foreground'
                                 }`}
                         >
                             {lang.label}

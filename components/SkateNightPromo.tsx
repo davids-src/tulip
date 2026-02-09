@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
+
 
 export default function SkateNightPromo() {
     return (
@@ -24,27 +24,19 @@ export default function SkateNightPromo() {
                     {/* Content Column */}
                     <div className="flex flex-col space-y-8">
                         <div>
-                            {/* Main title - SKATE NIGHT in coral */}
-                            <div className="flex items-center gap-4 mb-4">
-                                <Image
-                                    src="/logo-tulipan-piros.svg"
-                                    alt="Tulip Icon"
-                                    width={60}
-                                    height={60}
-                                    className="opacity-80"
-                                />
-                                <h2 className="text-5xl md:text-6xl font-rubik font-light text-[#d11133] leading-tight uppercase">
+                            {/* Titles aligned left */}
+                            <div className="mb-8">
+                                {/* Main Title - SKATE NIGHT */}
+                                <h2 className="text-3xl md:text-5xl font-rubik font-light text-[#d11133] uppercase tracking-[0.3em] mb-2 leading-none">
                                     SKATE NIGHT
                                 </h2>
+
+                                {/* Subtitle - FASHION SHOW & AFTER PARTY */}
+                                <h3 className="text-lg md:text-xl font-rubik font-light text-[#d11133] uppercase tracking-widest">
+                                    FASHION SHOW & AFTER PARTY
+                                </h3>
                             </div>
-                            {/* Subtitle - FASHION SHOW & AFTER PARTY in fuchsia */}
-                            <h3 className="text-lg md:text-xl font-rubik font-light text-brand-fuchsia uppercase tracking-widest mb-2">
-                                FASHION SHOW & AFTER PARTY
-                            </h3>
-                            <p className="text-sm font-rubik font-light text-brand-fuchsia uppercase tracking-wide mb-2">
-                                BY TULIP
-                            </p>
-                            <div className="w-20 h-1 bg-brand-fuchsia mb-8"></div>
+
                             <p className="text-lg md:text-xl font-rubik font-light text-foreground leading-relaxed">
                                 Egy különleges divatbemutató és élményest, ahol a stílus és a mozgás találkozik.
                                 Csatlakozz, és légy részese a Skate Night hangulatának.
