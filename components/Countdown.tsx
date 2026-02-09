@@ -43,16 +43,18 @@ export default function Countdown({ targetDate, label }: CountdownProps) {
 
     return (
         <div className="flex flex-col items-center space-y-4 py-8">
-            <p className="text-sm font-rubik font-light uppercase tracking-widest text-[#d11133]">
+            <p className="text-sm font-rubik font-light uppercase tracking-widest text-brand-fuchsia">
                 {label}
             </p>
             <div className="flex space-x-4 md:space-x-8">
                 {Object.entries(timeLeft).map(([unit, value]) => (
                     <div key={unit} className="flex flex-col items-center">
-                        <span className="text-3xl md:text-5xl font-inter font-light text-foreground">
-                            {String(value).padStart(2, '0')}
-                        </span>
-                        <span className="text-[10px] md:text-xs font-rubik font-light uppercase tracking-[0.2em] text-muted-foreground mt-2">
+                        <div className="bg-brand-fuchsia px-6 py-4">
+                            <span className="text-3xl md:text-5xl font-inter font-light text-brand-light dark:text-brand-dark">
+                                {String(value).padStart(2, '0')}
+                            </span>
+                        </div>
+                        <span className="text-[10px] md:text-xs font-rubik font-light uppercase tracking-[0.2em] text-brand-fuchsia mt-2">
                             {unit === 'days' ? 'nap' : unit === 'hours' ? 'óra' : unit === 'minutes' ? 'perc' : 'mp'}
                         </span>
                     </div>

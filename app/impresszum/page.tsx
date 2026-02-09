@@ -8,13 +8,13 @@ export default function ImpresszumPage() {
     return (
         <main className="min-h-screen bg-background transition-colors pt-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 max-w-4xl">
-                <h1 className="text-3xl md:text-4xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.35em] mb-12">
+                <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-12">
                     Impresszum
                 </h1>
 
                 <div className="space-y-8 font-rubik font-light text-foreground leading-relaxed text-justify">
                     <section>
-                        <h2 className="text-xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-4">A honlap üzemeltetője</h2>
+                        <h2 className="text-xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-4">A honlap üzemeltetője</h2>
                         <p><strong>Cégnév:</strong> Tulip Shop Hungary Kft.</p>
                         <p><strong>Székhely:</strong> 8000 Székesfehérvár, Ady Endre u. 11.</p>
                         <p><strong>Adószám:</strong> 32470720-2-07</p>
@@ -23,13 +23,13 @@ export default function ImpresszumPage() {
                     </section>
 
                     <section>
-                        <h2 className="text-xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-4">Elérhetőség</h2>
+                        <h2 className="text-xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-4">Elérhetőség</h2>
                         <p><strong>E-mail:</strong> info@tulip.hu</p>
                         <p><strong>Telefon:</strong> +36 30 254 3373</p>
                     </section>
 
                     <section>
-                        <h2 className="text-xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-4">Tárhelyszolgáltató</h2>
+                        <h2 className="text-xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-4">Tárhelyszolgáltató</h2>
                         <p><strong>Név:</strong> Nethely Kft.</p>
                         <p><strong>Cím:</strong> 1115 Budapest, Halmi utca 29.</p>
                         <p><strong>E-mail:</strong> info@nethely.hu</p>

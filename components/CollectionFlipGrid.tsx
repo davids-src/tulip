@@ -8,8 +8,8 @@ export default function CollectionFlipGrid() {
         <section id="kollekcio" className="py-24 bg-background transition-colors">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.35em]">
-                        Kollekcióm
+                    <h2 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em]">
+                        KOLLEKCIÓ
                     </h2>
                 </div>
 

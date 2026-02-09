@@ -34,7 +34,7 @@ export default function ContactSection() {
     <section className="py-24 bg-background transition-colors">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.35em] mb-4">
+          <h2 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-4">
             Kapcsolat
           </h2>
         </div>
@@ -77,7 +77,7 @@ export default function ContactSection() {
           </div>
 
           {/* Right Side: Form */}
-          <div className="bg-background border border-border p-8 md:p-10 rounded-none shadow-none">
+          <div className="bg-background border border-border p-8 md:p-10 shadow-none">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
@@ -93,7 +93,7 @@ export default function ContactSection() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-border bg-background text-foreground rounded-none focus:outline-none focus:ring-1 focus:ring-brand-fuchsia transition-all"
+                  className="w-full px-4 py-3 border border-border bg-background text-foreground focus:outline-none focus:ring-1 focus:ring-brand-fuchsia transition-all"
                   placeholder="Kovács Anna"
                 />
               </div>
@@ -112,7 +112,7 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-border bg-background text-foreground rounded-none focus:outline-none focus:ring-1 focus:ring-brand-fuchsia transition-all"
+                  className="w-full px-4 py-3 border border-border bg-background text-foreground focus:outline-none focus:ring-1 focus:ring-brand-fuchsia transition-all"
                   placeholder="anna@example.com"
                 />
               </div>
@@ -131,14 +131,14 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-4 py-3 border border-border bg-background text-foreground rounded-none focus:outline-none focus:ring-1 focus:ring-brand-fuchsia transition-all resize-none"
+                  className="w-full px-4 py-3 border border-border bg-background text-foreground focus:outline-none focus:ring-1 focus:ring-brand-fuchsia transition-all resize-none"
                   placeholder="Írj üzenetet..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#d62b85] text-white dark:text-brand-dark px-8 py-4 rounded-none font-rubik font-light text-sm uppercase tracking-widest hover:opacity-90 transition-all active:scale-95"
+                className="w-full bg-[#d62b85] text-brand-light dark:text-brand-dark px-8 py-4 font-rubik font-light text-sm uppercase tracking-widest hover:opacity-90 transition-all active:scale-95"
               >
                 Üzenet küldése
               </button>

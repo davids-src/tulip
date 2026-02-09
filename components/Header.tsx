@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Home, LayoutGrid, PenLine, FileText, Users, Mail, Sun, Moon } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image';
 import { useTheme } from './ThemeProvider';
 import LanguageSelector from './LanguageSelector';
 
@@ -27,10 +28,17 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Brand section */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 border border-brand-fuchsia flex items-center justify-center transition-colors">
-              <div className="w-6 h-6 bg-brand-fuchsia rounded-full opacity-20" /> {/* Logo slot placeholder */}
+            {/* Theme-aware logo */}
+            <div className="w-10 h-10 relative">
+              <Image
+                src={theme === 'light' ? '/logo-light.svg' : '/logo-dark.svg'}
+                alt="TULIP Logo"
+                width={40}
+                height={40}
+                className="transition-opacity"
+              />
             </div>
-            <span className="text-2xl font-rubik font-light text-foreground tracking-[0.2em] uppercase transition-colors">
+            <span className="text-2xl font-rubik font-light text-brand-fuchsia tracking-[0.2em] uppercase transition-colors">
               TULIP
             </span>
           </Link>
@@ -54,7 +62,7 @@ export default function Header() {
             {/* Special Field: SKATE NIGHT */}
             <Link
               href="/skate-night"
-              className="px-4 py-2 border border-brand-fuchsia bg-background text-brand-fuchsia text-xs font-rubik font-light uppercase tracking-widest hover:bg-brand-fuchsia hover:text-white transition-all"
+              className="px-4 py-2 border border-brand-fuchsia bg-background text-brand-fuchsia text-xs font-rubik font-light uppercase tracking-widest hover:bg-brand-fuchsia hover:text-brand-light dark:hover:text-brand-dark transition-all"
             >
               SKATE NIGHT
             </Link>
@@ -113,7 +121,7 @@ export default function Header() {
           <Link
             href="/skate-night"
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-center px-4 py-3 border border-brand-fuchsia text-brand-fuchsia text-sm font-rubik font-light uppercase tracking-widest hover:bg-brand-fuchsia hover:text-brand-light transition-all"
+            className="block text-center px-4 py-3 border border-brand-fuchsia text-brand-fuchsia text-sm font-rubik font-light uppercase tracking-widest hover:bg-brand-fuchsia hover:text-brand-light dark:hover:text-brand-dark transition-all"
           >
             SKATE NIGHT
           </Link>

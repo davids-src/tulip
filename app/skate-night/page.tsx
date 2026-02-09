@@ -13,7 +13,7 @@ export default function SkateNightPage() {
                 {/* Title Section */}
                 <div className="text-center mb-16 space-y-2">
                     <p className="text-lg md:text-xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em]">
-                        SKATE NIGHT BY
+                        SKATE NIGHT BY TULIP
                     </p>
                     <h1 className="text-3xl md:text-5xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] leading-tight">
                         FASHION SHOW & AFTER PARTY

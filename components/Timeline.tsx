@@ -5,13 +5,13 @@ import TimelineItem from './TimelineItem';
 
 export default function Timeline() {
     return (
-        <section className="py-24 bg-gray-50 dark:bg-[#0B0B0B]/50 transition-colors">
+        <section className="py-24 bg-background transition-colors">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-black dark:text-white">Idővonal</h2>
-                        <div className="w-20 h-1 bg-tulip-red mx-auto mb-6"></div>
-                        <p className="text-xl text-gray-600 dark:text-tulip-mid-gray">
+                        <h2 className="text-4xl md:text-5xl font-rubik font-medium mb-6 text-[#d11133] uppercase">Idővonal</h2>
+                        <div className="w-20 h-1 bg-brand-fuchsia mx-auto mb-6"></div>
+                        <p className="text-xl font-rubik font-light text-foreground">
                             A legfontosabb mérföldkövek röviden, dátumokkal.
                         </p>
                     </div>

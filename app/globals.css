@@ -64,13 +64,20 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter transition-colors;
+    @apply bg-background text-foreground font-rubik transition-colors;
     font-size: 16px;
+    font-weight: 300;
     line-height: 1.5;
   }
 
   a {
-    @apply no-underline transition-colors;
+    @apply transition-colors;
+    text-decoration: none !important;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: none !important;
   }
 
   h1,
@@ -79,24 +86,36 @@
   h4,
   h5,
   h6 {
-    @apply font-inter font-light uppercase tracking-[0.35em] text-[#d62b85];
+    @apply font-inter font-light uppercase text-[#d62b85];
     line-height: 1.2;
+    text-decoration: none !important;
   }
 
   h1 {
     font-size: 3rem;
+    letter-spacing: 0.35em;
   }
 
   h2 {
     font-size: 2rem;
+    letter-spacing: 0.35em;
   }
 
   h3 {
     font-size: 1.5rem;
+    letter-spacing: 0.2em;
   }
 
   p {
+    @apply font-rubik font-light;
     line-height: 1.5;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    border-radius: 0 !important;
   }
 }
 
