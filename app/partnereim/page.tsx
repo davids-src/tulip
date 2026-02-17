@@ -8,6 +8,10 @@ export default function PartnereimPage() {
                     <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-8">
                         Partnereim
                     </h1>
+                    <p className="text-xl font-rubik font-light text-foreground max-w-2xl mx-auto leading-relaxed text-justify">
+                        A Tulip világát olyan szakemberek és műhelyek támogatják, akik ugyanazt az értékalapú
+                        szemléletet képviselik, mint márkánk: a minőséget, a megbízhatóságot és az igényes alkotást.
+                    </p>
                 </div>
 
                 <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-12">
@@ -24,6 +28,10 @@ export default function PartnereimPage() {
                     ))}
                 </div>
             </div>
+            <p className="text-xl font-rubik font-light text-foreground max-w-2xl mx-auto leading-relaxed text-justify pb-24">
+                Ha szeretnél partnerként csatlakozni a Tulip világához, írj bizalommal. Nyitottak vagyunk új
+                ötletekre, együttműködésekre, közös alkotásra.
+            </p>
         </main>
     );
 }
