@@ -11,13 +11,15 @@ export default function SkateNightPromo() {
                     {/* Video Column */}
                     <div className="relative group">
                         <div className="relative aspect-video overflow-hidden shadow-2xl border border-black/5 dark:border-white/10">
-                            <iframe
-                                className="w-full h-full"
-                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" // TODO: Replace with actual promo video URL
-                                title="Fashion Show – Skate Night Promo"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
+                            <video
+                                className="w-full h-full object-cover"
+                                controls
+                                playsInline
+                                preload="metadata"
+                            >
+                                <source src="/videos/skate-night.mp4" type="video/mp4" />
+                                A böngésződ nem támogatja a videó lejátszását.
+                            </video>
                         </div>
                     </div>
 

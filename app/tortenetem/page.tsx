@@ -1,23 +1,19 @@
 import type { Metadata } from 'next';
 import FounderIntro from '@/components/FounderIntro';
+import FounderManifesto from '@/components/FounderManifesto';
 import Timeline from '@/components/Timeline';
 
 export const metadata: Metadata = {
   title: 'Történetem – TULIP',
-  description: 'Ismerd meg, ki áll a TULIP mögött, és hogyan alakult a történet mérföldköveken át.',
+  description: `Oszoli Nikolett vagyok a Tulip márka megálmodója, alapítója és tervezője – női szabó, könnyűipari mérnök, mérnöktanár, designer és kétgyermekes édesanya –, akit a női elegancia, a természet ihlető ereje és a kézzel rajzolt tervek időtlensége vezet az alkotásban.`,
 };
+
 
 export default function StoryPage() {
   return (
     <main className="bg-background transition-colors">
       <FounderIntro />
-
-      {/* Quote Section Example */}
-      <section className="py-20 container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto border-l-2 border-brand-fuchsia pl-8 py-4 italic font-rubik font-light text-2xl text-foreground">
-          "A divat nem csupán ruha, hanem önkifejezés. Minden öltésnél arra törekszem, hogy a viselője valóban önmagát lássa a tükörben."
-        </div>
-      </section>
+      <FounderManifesto />
 
       <Timeline />
 

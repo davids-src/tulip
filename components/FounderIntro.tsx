@@ -19,29 +19,35 @@ export default function FounderIntro() {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                             <div className="absolute bottom-8 left-8 right-8">
                                 <p className="text-white font-rubik font-medium text-2xl">A TULIP megálmodója</p>
-                                <div className="w-12 h-1 bg-brand-fuchsia mt-2"></div>
+
                             </div>
                         </div>
                     </div>
 
                     {/* Text Content */}
                     <div>
-                        <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-8">
+                        <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-8 text-center lg:text-left">
                             Történetem
                         </h1>
-                        <div className="w-24 h-1.5 bg-brand-fuchsia mb-10"></div>
+
                         <div className="space-y-6 text-lg md:text-xl font-rubik font-light text-foreground leading-relaxed">
                             <p>
-                                Itt mutatom be, ki áll a TULIP mögött, hogyan indult minden, és miért lett a kézzel készített,
-                                személyre szabott ruhák világa az életem része.
+                                Oszoli Nikolett vagyok a Tulip márka megálmodója, alapítója és tervezője – női szabó,
+                                könnyűipari mérnök, mérnöktanár, designer és kétgyermekes édesanya –, akit a női elegancia, a
+                                természet ihlető ereje és a kézzel rajzolt tervek időtlensége vezet az alkotásban.
                             </p>
                             <p>
-                                A divat számomra nem csak öltözködés, hanem önkifejezés és művészet.
-                                Hiszek abban, hogy minden nő megérdemli azt az egyedi figyelmet,
-                                amit egy kézzel készített, minden részletében rá szabott ruha adhat.
+                                A Tulip születése nem egyetlen pillanat műve volt, hanem egy évtizedeken át érlelődő történet.
+                            </p>
+                            <p>
+                                Már óvodás korban is tulipános ruhákat rajzoltam hercegnőknek, általános iskolában díjat
+                                nyertem Tulipánország című mesémmel, később pedig szülővárosom ikonikus épülete, a
+                                Tulipánosház vált meghatározó inspirációvá. Ez az örök motívum ma már nemcsak jelképezi,
+                                hanem formálja is a márkám lényegét.
                             </p>
                             <p className="italic font-rubik font-medium text-foreground border-l-4 border-brand-fuchsia pl-6 py-2">
-                                "A legszebb ruha, amit egy nő viselhet, az önbizalom. Én csak segítek ezt láthatóvá tenni."
+                                "A divat számomra sokkal több, mint ruhák tervezése: párbeszéd önmagunkkal, eszköz a női
+                                identitás kifejezésére, és a belső erő megmutatásának természetes formája."
                             </p>
                         </div>
                     </div>

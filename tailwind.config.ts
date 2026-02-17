@@ -14,6 +14,7 @@ const config: Config = {
         inter: ['var(--font-inter)', 'sans-serif'],
         heading: ['var(--font-inter)', 'sans-serif'],
         body: ['var(--font-inter)', 'sans-serif'],
+        waterfall: ['var(--font-waterfall)', 'cursive'],
       },
       colors: {
         brand: {

@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter, Rubik } from 'next/font/google';
+import { Inter, Rubik, Waterfall } from 'next/font/google';
 import ClientLayout from '@/components/ClientLayout';
 
 const inter = Inter({
@@ -11,6 +11,12 @@ const inter = Inter({
 const rubik = Rubik({
   subsets: ['latin'],
   variable: '--font-rubik',
+});
+
+const waterfall = Waterfall({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-waterfall',
 });
 
 export const metadata: Metadata = {
@@ -38,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="hu" className={`${inter.variable} ${rubik.variable}`} suppressHydrationWarning>
+    <html lang="hu" className={`${inter.variable} ${rubik.variable} ${waterfall.variable}`} suppressHydrationWarning>
       <body className={`${inter.className} selection:bg-brand-fuchsia selection:text-white`}>
         <ClientLayout>{children}</ClientLayout>
       </body>
