@@ -16,8 +16,7 @@ export default function CollectionPage() {
             Kollekció
           </h1>
           <p className="text-xl font-rubik font-light text-foreground max-w-2xl mx-auto leading-relaxed text-justify">
-            Fedezd fèl legújabb alkotásainkat, melyek a legfinomabb anyagokból és végtelen odaadással készültek.
-            Minden darab egyedi történetet mesél el, ötvözve a klasszikus eleganciát a modern szemlélettel.
+            A női elegancia legmagasabb formája, ami nem követi a világot. Irányt mutat neki.
           </p>
         </div>
 
