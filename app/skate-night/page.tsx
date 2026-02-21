@@ -105,12 +105,20 @@ export default function SkateNightPage() {
             <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 max-w-5xl">
                 <h2 className="text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-12 text-center">Mi vár rád?</h2>
 
-                {/* 4 colors placeholders */}
-                <div className="grid grid-cols-4 gap-4 mb-16 aspect-[4/1]">
-                    <div className="bg-black border border-border flex items-center justify-center opacity-80"><span className="text-white/30 text-xs tracking-widest uppercase rotate-90 md:rotate-0">Fekete</span></div>
-                    <div className="bg-[#d11133] border border-border flex items-center justify-center opacity-80"><span className="text-white/30 text-xs tracking-widest uppercase rotate-90 md:rotate-0">Korall Piros</span></div>
-                    <div className="bg-brand-fuchsia border border-border flex items-center justify-center opacity-80"><span className="text-white/30 text-xs tracking-widest uppercase rotate-90 md:rotate-0">Fukszia</span></div>
-                    <div className="bg-[#fcfaf2] border border-border flex items-center justify-center opacity-80"><span className="text-black/20 text-xs tracking-widest uppercase rotate-90 md:rotate-0">Törtfehér</span></div>
+                {/* 4 colors images */}
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16 max-w-5xl mx-auto">
+                    <div className="relative aspect-[2/3] border border-border group overflow-hidden">
+                        <Image src="/images/arculat_rajzolt_fekete_jég.jpg" alt="Fekete jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                    </div>
+                    <div className="relative aspect-[2/3] border border-border group overflow-hidden">
+                        <Image src="/images/arculat_rajzolt_piros_jég.jpg" alt="Korall Piros jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                    </div>
+                    <div className="relative aspect-[2/3] border border-border group overflow-hidden">
+                        <Image src="/images/arculat_rajzolt_fukszia_jég.jpg" alt="Fukszia jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                    </div>
+                    <div className="relative aspect-[2/3] border border-border group overflow-hidden">
+                        <Image src="/images/arculat_rajzolt_fehér_jég.jpg" alt="Csontszín jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                    </div>
                 </div>
 
                 <div className="space-y-6 text-lg font-rubik font-light text-foreground leading-relaxed text-justify mb-12">
@@ -137,7 +145,7 @@ export default function SkateNightPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="relative aspect-[3/4] border border-white/20">
                             <Image
-                                src="/images/ice_fashion_show-1.jpg"
+                                src="/images/Nikolett Oszoli_Tulip Shop Hungary Kft..png"
                                 alt="Oszoli Nikolett - Ötletgazda"
                                 fill
                                 className="object-cover opacity-80"

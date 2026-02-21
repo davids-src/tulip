@@ -11,7 +11,7 @@ export default function FounderIntro() {
                     <div className="relative">
                         <div className="relative aspect-[4/5] overflow-hidden shadow-2xl border-4 border-foreground/10">
                             <Image
-                                src="/images/about-founder.jpg" // Note: Ensure this file exists in public/images
+                                src="/images/Nikolett Oszoli_Tulip Shop Hungary Kft..png"
                                 alt="A TULIP megálmodója"
                                 fill
                                 className="object-cover"
