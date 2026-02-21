@@ -3,36 +3,36 @@
         "id": "sport",
         "frontImage": "/images/3.jpg",
         "logoLight": "/images/logo-sport-feher-alapon.png",
-        "logoDark": "/images/logo-sport-fekete-alapon.png"
+        "logoDark": "/images/logo-sport-fekete-alapon_.png"
     },
     {
         "id": "costume",
         "frontImage": "/images/2.jpg",
-        "logoLight": "/images/logos/logo-costume-feher-alapon.svg",
-        "logoDark": "/images/logos/logo-costume-fekete-alapon.svg"
+        "logoLight": "/images/logo-costume-feher-alapon.png",
+        "logoDark": "/images/logo-costume-fekete-alapon.png"
     },
     {
         "id": "night",
         "frontImage": "/images/1.jpg",
-        "logoLight": "/images/logos/logo-night-feher-alapon.svg",
-        "logoDark": "/images/logos/logo-night-fekete-alapon.svg"
+        "logoLight": "/images/logo-night-feher-alapon.png",
+        "logoDark": "/images/logo-night-fekete-alapon.png"
     },
     {
         "id": "event",
-        "frontImage": "/images/collection/event-front.jpg",
-        "logoLight": "/images/logos/logo-event-feher-alapon.svg",
-        "logoDark": "/images/logos/logo-event-fekete-alapon.svg"
+        "frontImage": "/images/Tulip Shop Hungary Kft_Event.jpg",
+        "logoLight": "/images/logo-event-feher-alapon_.png",
+        "logoDark": "/images/logo-event-fekete-alapon.png"
     },
     {
         "id": "wedding",
-        "frontImage": "/images/collection/wedding-front.jpg",
-        "logoLight": "/images/logos/logo-wedding-feher-alapon.svg",
-        "logoDark": "/images/logos/logo-wedding-fekete-alapon.svg"
+        "frontImage": "/images/Tulip Shop Hungary Kft_Wedding.jpg",
+        "logoLight": "/images/logo-wedding-feher-alapon.png",
+        "logoDark": "/images/logo-wedding-fekete-alapon.png"
     },
     {
         "id": "diamond",
-        "frontImage": "/images/collection/diamond-front.jpg",
-        "logoLight": "/images/logos/logo-diamond-feher-alapon.svg",
-        "logoDark": "/images/logos/logo-diamond-fekete-alapon.svg"
+        "frontImage": "/images/Tulip Shop Hungary Kft_Diamond.jpg",
+        "logoLight": "/images/logo-diamond-feher-alapon.png",
+        "logoDark": "/images/logo-diamond-fekete-alapon.png"
     }
 ]
