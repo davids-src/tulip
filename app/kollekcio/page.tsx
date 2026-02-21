@@ -31,20 +31,30 @@ export default function CollectionPage() {
           ))}
         </div>
 
-        <div className="mt-32 text-center bg-accent/20 p-12 lg:p-20 border border-border">
-          <h2 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-6">
-            Szeretnél valami igazán egyedit?
-          </h2>
-          <p className="text-lg font-rubik font-light text-foreground mb-10 max-w-xl mx-auto text-justify">
-            Minden ruhánk személyre szabható, de akár teljesen saját elképzelések alapján is tervezünk számodra.
-            Vedd fel velünk a kapcsolatot, hogy elindíthassuk közös tervezési folyamatunkat.
-          </p>
-          <a
-            href="/kapcsolat"
-            className="inline-block bg-[#d11133] text-white px-10 py-5 text-sm font-rubik font-light uppercase tracking-widest hover:bg-[#b00e2a] transition-all"
-          >
-            Foglalj konzultációt
-          </a>
+        {/* Collection description text block */}
+        <div className="mt-20 pt-16 border-t border-[#d11133]/20">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+              {/* Ezt a szöveget cseréld le a tényleges kollekció leírásra */}
+              A Tulip Luxuskollekció nem ruhákat mutat be hanem ikonikus darabokat teremt. Minden
+              részletében a csendes fényű elegancia, a mértékletességbe rejtett luxus és a
+              megkérdőjelezhetetlen szakmai minőség esszenciája jelenik meg. Belépsz egy világba, ahol a
+              nőiesség státusz, a minőség érték, az elegancia pedig örökség.
+            </p>
+            <p className="mt-6 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+              {/* Második bekezdés helye */}
+              Minden darab egy művészi kompozíció: kézzel rajzolt vonalak, letisztult formák, légiesen finom
+              textúrák. Nem a trendekhez igazodik hanem új fejezetet nyit a magas presztízsű hazai
+              divatiparban.
+            </p>
+            <p className="mt-6 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+              {/* Második bekezdés helye */}
+              A kollekció azoknak szól, akik értik és érzik a valódi luxust, akiknek a minőség nem opció,
+              hanem alapelv,
+              akik a csendes eleganciában látják a legerősebb kijelentést, akik képesek megélni a nőiesség
+              időtlen szépségét.
+            </p>
+          </div>
         </div>
       </div>
     </main>

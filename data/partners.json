@@ -1,42 +1,12 @@
 [
     {
         "id": "partner1",
-        "name": "Partner One",
-        "logo": "/images/partners/partner1.svg"
+        "name": "Vivi",
+        "logo": "/images/logo-white-allo_vivi.svg"
     },
     {
         "id": "partner2",
-        "name": "Partner Two",
-        "logo": "/images/partners/partner2.svg"
-    },
-    {
-        "id": "partner3",
-        "name": "Partner Three",
-        "logo": "/images/partners/partner3.svg"
-    },
-    {
-        "id": "partner4",
-        "name": "Partner Four",
-        "logo": "/images/partners/partner4.svg"
-    },
-    {
-        "id": "partner5",
-        "name": "Partner Five",
-        "logo": "/images/partners/partner5.svg"
-    },
-    {
-        "id": "partner6",
-        "name": "Partner Six",
-        "logo": "/images/partners/partner6.svg"
-    },
-    {
-        "id": "partner7",
-        "name": "Partner Seven",
-        "logo": "/images/partners/partner7.svg"
-    },
-    {
-        "id": "partner8",
-        "name": "Partner Eight",
-        "logo": "/images/partners/partner8.svg"
+        "name": "Laci",
+        "logo": "/images/logo-elsodleges-allo_laci.svg"
     }
 ]

@@ -31,7 +31,7 @@ export default function Header() {
             {/* Theme-aware logo */}
             <div className="w-10 h-10 relative">
               <Image
-                src={theme === 'light' ? '/logo-light.svg' : '/logo-dark.svg'}
+                src={theme === 'light' ? '/logo-light.png' : '/logo-dark.png'}
                 alt="TULIP Logo"
                 width={40}
                 height={40}

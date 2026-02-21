@@ -39,9 +39,19 @@ export default function SkateNightPromo() {
                                 </h3>
                             </div>
 
-                            <p className="text-lg md:text-xl font-rubik font-light text-foreground leading-relaxed">
-                                Egy különleges divatbemutató és élményest, ahol a stílus és a mozgás találkozik.
-                                Csatlakozz, és légy részese a Skate Night hangulatának.
+                            <p className="text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+                                2026 április 18. - A stílus a jégre költözik!
+                                Légy részese a varázslatnak, amikor a jég szenvedélyesen perzsel, a stílus pedig kecses táncot
+                                lejt az esztétikummal.
+                            </p>
+                            <p className="mt-5 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+                                Jön a SKATE NIGHT by TULIP a trendek kedvelőinek exkluzív élménye.
+                                Különleges szettek, welcome pezsgő, fashion show, fergeteges after party.
+                                Egy este, amikor Székesfehérvár a divat lüktető fővárosává válik.
+                                Bréda Bia, Newik és Beszeda Gábor már biztosan ott lesznek.
+                            </p>
+                            <p className="mt-5 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+                                Ugye Te sem hagyod ki?
                             </p>
                         </div>
 

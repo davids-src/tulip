@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import partnersData from '@/data/partners.json';
+
 
 export default function PartnereimPage() {
     return (
@@ -14,16 +16,20 @@ export default function PartnereimPage() {
                     </p>
                 </div>
 
-                <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-12">
+                <div className="mt-24 grid grid-cols-2 gap-12 max-w-2xl mx-auto">
                     {partnersData.map((partner) => (
                         <div
                             key={partner.id}
-                            className="aspect-square bg-border/10 flex items-center justify-center p-8 border border-border group hover:border-brand-fuchsia transition-colors"
+                            className="aspect-square bg-border/10 flex items-center justify-center p-10 border border-border group hover:border-[#d11133] transition-colors"
                         >
-                            <div className="text-xl font-inter font-light uppercase tracking-widest text-[#1d1d1b] dark:text-[#fffdf5] opacity-50 group-hover:opacity-100 transition-opacity text-center">
-                                {partner.name}
+                            <div className="relative w-full h-full flex items-center justify-center">
+                                <Image
+                                    src={partner.logo}
+                                    alt={partner.name}
+                                    fill
+                                    className="object-contain p-4 opacity-70 group-hover:opacity-100 transition-opacity dark:invert"
+                                />
                             </div>
-                            {/* Actual Image component would go here using partner.logo */}
                         </div>
                     ))}
                 </div>

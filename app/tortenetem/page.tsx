@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import FounderIntro from '@/components/FounderIntro';
 import FounderManifesto from '@/components/FounderManifesto';
-import Timeline from '@/components/Timeline';
+// import Timeline from '@/components/Timeline';
 
 export const metadata: Metadata = {
   title: 'Történetem – TULIP',
@@ -15,10 +15,10 @@ export default function StoryPage() {
       <FounderIntro />
       <FounderManifesto />
 
-      <Timeline />
+      {/* <Timeline /> */}
 
       {/* Lippai Piros Placeholder Section */}
-      <section className="py-24 border-t border-border">
+      {/* <section className="py-24 border-t border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.35em] text-center mb-12">
             Rólam írták
@@ -32,10 +32,10 @@ export default function StoryPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA for Story Page */}
-      <section className="py-24 bg-accent/10 border-t border-border">
+      {/* <section className="py-24 bg-accent/10 border-t border-border">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8">
             Legyél te is a Történetem része!
@@ -50,7 +50,7 @@ export default function StoryPage() {
             Időpontot foglalok
           </a>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

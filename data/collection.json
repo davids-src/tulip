@@ -2,8 +2,8 @@
     {
         "id": "sport",
         "frontImage": "/images/3.jpg",
-        "logoLight": "/images/logos/logo-sport-feher-alapon.svg",
-        "logoDark": "/images/logos/logo-sport-fekete-alapon.svg"
+        "logoLight": "/images/logo-sport-feher-alapon.png",
+        "logoDark": "/images/logo-sport-fekete-alapon.png"
     },
     {
         "id": "costume",
