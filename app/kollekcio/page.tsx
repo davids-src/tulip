@@ -34,20 +34,20 @@ export default function CollectionPage() {
         {/* Collection description text block */}
         <div className="mt-20 pt-16 border-t border-[#d11133]/20">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+            <p className="text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide text-justify">
               {/* Ezt a szöveget cseréld le a tényleges kollekció leírásra */}
               A Tulip Luxuskollekció nem ruhákat mutat be hanem ikonikus darabokat teremt. Minden
               részletében a csendes fényű elegancia, a mértékletességbe rejtett luxus és a
               megkérdőjelezhetetlen szakmai minőség esszenciája jelenik meg. Belépsz egy világba, ahol a
               nőiesség státusz, a minőség érték, az elegancia pedig örökség.
             </p>
-            <p className="mt-6 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+            <p className="mt-6 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide text-justify">
               {/* Második bekezdés helye */}
               Minden darab egy művészi kompozíció: kézzel rajzolt vonalak, letisztult formák, légiesen finom
               textúrák. Nem a trendekhez igazodik hanem új fejezetet nyit a magas presztízsű hazai
               divatiparban.
             </p>
-            <p className="mt-6 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+            <p className="mt-6 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide text-justify">
               {/* Második bekezdés helye */}
               A kollekció azoknak szól, akik értik és érzik a valódi luxust, akiknek a minőség nem opció,
               hanem alapelv,

@@ -34,7 +34,7 @@ export default function FounderManifesto() {
 
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
                             Célom, hogy minden nő olyan ruhában léphessen ki a világba, amelyben
-                            <span className="font-medium text-[#d11133]"> magabiztosnak, harmonikusnak és önazonosnak </span>
+                            magabiztosnak, harmonikusnak és önazonosnak
                             érzi magát.
                         </p>
                     </div>
@@ -81,17 +81,11 @@ export default function FounderManifesto() {
                         </p>
                     </div>
 
-                    {/* Closing Quote */}
+                    {/* Closing Text */}
                     <div className="pt-12 border-t border-border text-center space-y-6">
-                        <h3 className="text-xl md:text-2xl font-rubik font-medium text-[#d11133] italic">
-                            „A siker akkor teljes, ha nemcsak kapunk, hanem adunk is.”
-                        </h3>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify max-w-2xl mx-auto">
                             A Tulip erről szól: a női út szépségéről, a tudatos alkotás erejéről és arról a hitről,
                             hogy értéket teremteni felelősség – de kiváltság is.
-                        </p>
-                        <p className="text-lg font-rubik font-medium text-foreground pt-4">
-                            Köszönöm, hogy itt vagy, és hogy részese vagy ennek a történetnek.
                         </p>
                     </div>
 

@@ -55,7 +55,7 @@ export default function ContactPage() {
           </div>
 
           <div className="mt-16 text-center">
-            <p className="text-lg font-rubik font-light text-foreground/80 italic max-w-xl mx-auto leading-relaxed">
+            <p className="text-lg font-rubik font-light text-foreground/80 max-w-xl mx-auto leading-relaxed text-justify">
               Várunk szeretettel műhelyünkben előzetes időpontegyeztetés után.
               Hívj vagy írj bizalommal, hogy megbeszélhessük az álmaid ruháját!
             </p>

@@ -6,7 +6,7 @@ export default function DivatMegujulas() {
                     <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-6">
                         Divat és megújulás
                     </h1>
-                    <p className="text-xl font-rubik font-light text-brand-fuchsia italic mb-4">
+                    <p className="text-xl font-rubik font-light text-foreground mb-4">
                         Székesfehérvári tervező, aki újragondolja a magyar divatot
                     </p>
                     <time className="text-sm font-rubik text-foreground/60">2026. január</time>

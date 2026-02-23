@@ -6,7 +6,7 @@ export default function TulipSzuletese() {
                     <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-6">
                         A Tulip születése
                     </h1>
-                    <p className="text-xl font-rubik font-light text-brand-fuchsia italic mb-4">
+                    <p className="text-xl font-rubik font-light text-foreground mb-4">
                         Interjú Oszoli Nikolettel, a magyar divat új hangjával
                     </p>
                     <time className="text-sm font-rubik text-foreground/60">2026. január 28.</time>

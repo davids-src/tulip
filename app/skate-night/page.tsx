@@ -61,7 +61,9 @@ export default function SkateNightPage() {
 
                     <div className="pt-8">
                         <Link
-                            href="/kapcsolat"
+                            href="https://jegymester.hu/production/742578/skate-night-by-tulip/74002706"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-block bg-[#d11133] text-white px-12 py-5 text-sm font-rubik font-light uppercase tracking-widest hover:bg-[#b00e2a] transition-all"
                         >
                             Biztosítsd a helyed a ragyogásban
@@ -108,16 +110,16 @@ export default function SkateNightPage() {
                 {/* 4 colors images */}
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16 max-w-5xl mx-auto">
                     <div className="relative aspect-[2/3] border border-border group overflow-hidden">
-                        <Image src="/images/arculat_rajzolt_fekete_jég.jpg" alt="Fekete jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <Image src="/images/arculat_rajzolt_fekete_jeg.jpg" alt="Fekete jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div className="relative aspect-[2/3] border border-border group overflow-hidden">
-                        <Image src="/images/arculat_rajzolt_piros_jég.jpg" alt="Korall Piros jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <Image src="/images/arculat_rajzolt_piros_jeg.jpg" alt="Korall Piros jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div className="relative aspect-[2/3] border border-border group overflow-hidden">
-                        <Image src="/images/arculat_rajzolt_fukszia_jég.jpg" alt="Fukszia jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <Image src="/images/arculat_rajzolt_fukszia_jeg.jpg" alt="Fukszia jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div className="relative aspect-[2/3] border border-border group overflow-hidden">
-                        <Image src="/images/arculat_rajzolt_fehér_jég.jpg" alt="Csontszín jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <Image src="/images/arculat_rajzolt_feher_jeg.jpg" alt="Csontszín jég arculat" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>
                 </div>
 
@@ -168,7 +170,7 @@ export default function SkateNightPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:flex-row-reverse">
                         <div className="order-1 lg:order-2 relative aspect-video lg:aspect-[4/3] border border-white/20">
                             <Image
-                                src="/images/Wiener-Eistraum-2019_Eröffnung_DSC00925_print_cPID_David-Bohmann"
+                                src="/images/Wiener-Eistraum-2019_Eröffnung_DSC00925_print_cPID_David-Bohmann.jpg"
                                 alt="Wiener Eistraum"
                                 fill
                                 className="object-cover opacity-80"

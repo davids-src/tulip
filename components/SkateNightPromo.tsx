@@ -51,18 +51,18 @@ export default function SkateNightPromo() {
                                     </h3>
                                 </div>
 
-                                <p className="text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+                                <p className="text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide text-justify">
                                     2026 április 18. - A stílus a jégre költözik!
                                     Légy részese a varázslatnak, amikor a jég szenvedélyesen perzsel, a stílus pedig kecses táncot
                                     lejt az esztétikummal.
                                 </p>
-                                <p className="mt-5 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+                                <p className="mt-5 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide text-justify">
                                     Jön a SKATE NIGHT by TULIP a trendek kedvelőinek exkluzív élménye.
                                     Különleges szettek, welcome pezsgő, fashion show, fergeteges after party.
                                     Egy este, amikor Székesfehérvár a divat lüktető fővárosává válik.
                                     Bréda Bia, Newik és Beszeda Gábor már biztosan ott lesznek.
                                 </p>
-                                <p className="mt-5 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide">
+                                <p className="mt-5 text-base md:text-lg font-rubik font-light text-foreground/80 leading-relaxed tracking-wide text-center">
                                     Ugye Te sem hagyod ki?
                                 </p>
                             </div>
@@ -72,9 +72,13 @@ export default function SkateNightPromo() {
                                     href="https://jegymester.hu/production/742578/skate-night-by-tulip/74002706"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-brand-fuchsia text-brand-light dark:text-brand-dark px-5 py-4 font-rubik font-light text-center hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-brand-fuchsia transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg"
+                                    className="relative group overflow-hidden bg-brand-fuchsia text-white px-6 py-4 font-rubik font-medium uppercase tracking-[0.2em] text-sm text-center shadow-[0_4px_24px_rgba(180,0,120,0.35)] hover:shadow-[0_6px_32px_rgba(180,0,120,0.55)] focus:outline-none focus:ring-2 focus:ring-brand-fuchsia transition-all duration-300 transform hover:scale-[1.03] active:scale-[0.98] flex items-center justify-center gap-2"
                                 >
-                                    Jegyvásárlás
+                                    <span className="relative z-10 flex items-center gap-2">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 10v3M6 6v11M10 3v18M14 8v7M18 5v13M22 10v3" /></svg>
+                                        Jegyvásárlás
+                                    </span>
+                                    <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
                                 </Link>
 
                                 <Link

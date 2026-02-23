@@ -45,7 +45,7 @@ export default function FounderIntro() {
                                 Tulipánosház vált meghatározó inspirációvá. Ez az örök motívum ma már nemcsak jelképezi,
                                 hanem formálja is a márkám lényegét.
                             </p>
-                            <p className="italic font-rubik font-medium text-foreground border-l-4 border-brand-fuchsia pl-6 py-2">
+                            <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
                                 "A divat számomra sokkal több, mint ruhák tervezése: párbeszéd önmagunkkal, eszköz a női
                                 identitás kifejezésére, és a belső erő megmutatásának természetes formája."
                             </p>

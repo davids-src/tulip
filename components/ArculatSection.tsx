@@ -38,10 +38,10 @@ export default function ArculatSection() {
                     <h3 className="text-xl md:text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-6">
                         Arculati Színvilág
                     </h3>
-                    <p className="text-xl md:text-2xl font-waterfall text-brand-fuchsia leading-relaxed">
+                    <p className="text-xl md:text-2xl font-waterfall text-brand-fuchsia leading-relaxed text-center">
                         &quot;Erő, harmónia, egyediség – négy színben megrajzolva.&quot;
                     </p>
-                    <p className="text-base font-rubik font-light text-foreground/80 mt-4 leading-relaxed tracking-wide italic">
+                    <p className="text-base font-rubik font-light text-foreground/80 mt-4 leading-relaxed tracking-wide text-center">
                         A modell rajzokon vázolt ruhák a fináléban lesznek bemutatva.
                     </p>
                 </div>
@@ -73,7 +73,7 @@ export default function ArculatSection() {
                 </div>
 
                 <div className="mt-16 max-w-3xl mx-auto text-center border-t border-border pt-12">
-                    <p className="text-lg md:text-xl font-rubik font-light text-foreground/90 leading-relaxed tracking-wide">
+                    <p className="text-lg md:text-xl font-rubik font-light text-foreground/90 leading-relaxed tracking-wide text-justify">
                         Ez a színpaletta együtt egy olyan vizuális világot alkot, amely egyszerre modern, energikus és kifinomult — pontosan azt a hangulatot közvetítve, amit márkánkkal képviselünk.
                     </p>
                 </div>
