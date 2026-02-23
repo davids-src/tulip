@@ -145,7 +145,7 @@ export default function SkateNightPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="relative aspect-[3/4] border border-white/20">
                             <Image
-                                src="/images/Nikolett Oszoli_Tulip Shop Hungary Kft..png"
+                                src="/images/ice_fashion_show-1.jpg"
                                 alt="Oszoli Nikolett - Ötletgazda"
                                 fill
                                 className="object-cover opacity-80"
@@ -168,7 +168,7 @@ export default function SkateNightPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:flex-row-reverse">
                         <div className="order-1 lg:order-2 relative aspect-video lg:aspect-[4/3] border border-white/20">
                             <Image
-                                src="/images/Wiener-Eistraum-2019_Eröffnung_DSC00925_print_cPID_David-Bohmann.jpg"
+                                src="/images/Wiener-Eistraum-2019_Eröffnung_DSC00925_print_cPID_David-Bohmann"
                                 alt="Wiener Eistraum"
                                 fill
                                 className="object-cover opacity-80"

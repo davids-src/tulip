@@ -33,12 +33,13 @@ export default function DrawingCompetition() {
                             </div>
                         </div>
 
-                        <div className="relative w-full aspect-[4/3] border border-border group overflow-hidden">
+                        <div className="relative w-full border border-border group overflow-hidden">
                             <Image
-                                src="/images/rajzpalyazat.jpg"
+                                src="/images/RAJZPÁLYÁZAT(1).png"
                                 alt="Rajzpályázat divattervezés"
-                                fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                width={800}
+                                height={1000}
+                                className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
                     </div>
