@@ -50,7 +50,7 @@ export default function ArculatSection() {
                     {paletta.map((elem, idx) => (
                         <div key={idx} className="flex flex-col space-y-6 group">
                             {/* Kép */}
-                            <div className={`relative w-full aspect-[2/3] border border-border overflow-hidden bg-accent/5 transition-colors group-hover:${elem.borderSzolo}`}>
+                            <div className={`relative w-full aspect-[2/3] border border-border overflow-hidden transition-colors group-hover:${elem.borderSzolo}`}>
                                 <Image
                                     src={elem.kep}
                                     alt={`Arculati rajz – ${elem.cim}`}

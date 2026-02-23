@@ -18,7 +18,7 @@ export default function FounderManifesto() {
                             az egyediség és a nőiesség elegáns megfogalmazása vezérel.
                         </p>
 
-                        <div className="bg-accent/5 p-8 rounded-sm border-l-2 border-[#d11133]">
+                        <div className="border border-border p-8">
                             <p className="text-lg font-rubik font-normal text-foreground mb-4">
                                 A Tulip darabjai így válnak egyszerre:
                             </p>

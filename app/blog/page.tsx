@@ -52,7 +52,7 @@ export default function BlogPage() {
                         <Link
                             key={post.id}
                             href={post.href}
-                            className="group bg-white dark:bg-[#0B0B0B] border border-border p-8 transition-all hover:shadow-2xl hover:border-brand-fuchsia"
+                            className="group bg-background border border-border p-8 transition-all hover:shadow-2xl hover:border-brand-fuchsia"
                         >
                             <article>
                                 <time className="text-sm font-rubik text-foreground/60 mb-4 block">

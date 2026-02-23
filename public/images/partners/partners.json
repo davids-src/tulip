@@ -1,0 +1,12 @@
+[
+    {
+        "id": "partner1",
+        "name": "Vivi",
+        "logo": "/images/logo-white-allo_vivi.svg"
+    },
+    {
+        "id": "partner2",
+        "name": "Laci",
+        "logo": "/images/logo-elsodleges-allo_laci.svg"
+    }
+]

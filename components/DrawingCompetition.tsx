@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function DrawingCompetition() {
     return (
-        <section className="py-24 bg-white dark:bg-[#0B0B0B] transition-colors border-t border-border">
+        <section className="py-24 bg-background transition-colors border-t border-border">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">

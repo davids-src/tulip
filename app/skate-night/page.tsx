@@ -50,7 +50,7 @@ export default function SkateNightPage() {
                         </div>
                     </div>
 
-                    <div className="inline-block border border-border bg-accent/5 p-6 mt-16">
+                    <div className="inline-block border border-border p-6 mt-16">
                         <p className="text-lg md:text-xl font-rubik font-medium text-foreground uppercase tracking-widest">
                             2026. április 18. szombat
                         </p>
@@ -70,7 +70,7 @@ export default function SkateNightPage() {
                         </Link>
                     </div>
 
-                    <div className="mt-16 bg-accent/10 border border-border p-8">
+                    <div className="mt-16 border border-border p-8">
                         <Countdown targetDate={earlyBirdDate} label="Early bird jegyek lejáró határideje:" />
                     </div>
                 </div>
@@ -79,13 +79,13 @@ export default function SkateNightPage() {
             {/* Vízió */}
             <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 max-w-4xl">
                 <h2 className="text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-8 text-center">Vízió</h2>
-                <p className="text-xl md:text-2xl font-waterfall text-brand-fuchsia text-center leading-relaxed">
+                <p className="text-xl md:text-5xl font-waterfall text-brand-fuchsia text-center leading-relaxed">
                     „A divat számomra sokkal több, mint ruhák tervezése: párbeszéd önmagunkkal, eszköz a női identitás kifejezésére és a belső erő megmutatásának természetes formája.”
                 </p>
             </section>
 
             {/* 6 Titokzatos Világ */}
-            <section className="bg-accent/5 border-y border-border py-24">
+            <section className="bg-background border-y border-border py-24">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-16 text-center">6 Titokzatos Világ</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -140,7 +140,7 @@ export default function SkateNightPage() {
             </section>
 
             {/* Történetek & Ötletgazda */}
-            <section className="bg-[#0B0B0B] text-[#fffdf5] py-24">
+            <section className="bg-background py-24">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl space-y-24">
 
                     {/* Oszoli Nikolett */}
@@ -155,7 +155,7 @@ export default function SkateNightPage() {
                         </div>
                         <div className="space-y-6">
                             <h3 className="text-2xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em]">Ötletgazda: Oszoli Nikolett</h3>
-                            <div className="text-base font-rubik font-light leading-relaxed text-justify space-y-4 text-[#fffdf5]/80">
+                            <div className="text-base font-rubik font-light leading-relaxed text-justify space-y-4 text-foreground/80">
                                 <p>
                                     “Ruhaipari szakemberként, a divatvilág magával ragadt és a székesfehérvári MET Aréna ad otthont az első kollekcióm bemutatásának amelyre közel 10 éve tudatosan készülök. A helyszín választás során olyan környezetet kerestem ami exkluzív és személyiségemet tükrözi, azonosulni tudok vele illetve rendhagyó módon eltér a korábbi évek trendkövető magatartásától, a kifutók világától. Szeretném a ruhát mozgásában bemutatni.”
                                 </p>
@@ -177,7 +177,7 @@ export default function SkateNightPage() {
                             />
                         </div>
                         <div className="order-2 lg:order-1 space-y-6">
-                            <div className="text-base font-rubik font-light leading-relaxed text-justify space-y-4 text-[#fffdf5]/80 italic border-l-2 border-brand-fuchsia pl-6">
+                            <div className="text-base font-rubik font-light leading-relaxed text-justify space-y-4 text-foreground/80 italic border-l-2 border-brand-fuchsia pl-6">
                                 <p>
                                     "Egy éve a bécsi jégálomban (Wiener, Eistraum) korcsolyáztam, tele kérdésekkel, de egyetlen erős képpel a fejemben: hogy egyszer valóra válik, amit itt megálmodtam: jégkori, csillogás, divatba öltött mozdulatok, lendület és, hogy egyszer mindez valóra válik."
                                 </p>
@@ -187,7 +187,6 @@ export default function SkateNightPage() {
                             </div>
                             <div className="pt-4 flex flex-col space-y-2">
                                 <a href="https://www.wien.gv.at/en/leisure/vienna-ice-dream" target="_blank" rel="noreferrer" className="text-xs uppercase tracking-widest text-[#d11133] hover:text-white transition-colors">▸ Részletek: Vienna Ice Dream (EN)</a>
-                                <a href="https://www.wien.gv.at/en/leisure/vienna-ice-dream" target="_blank" rel="noreferrer" className="text-xs uppercase tracking-widest text-[#d11133] hover:text-white transition-colors">▸ Home EN - Wiener Eistraum</a>
                             </div>
                         </div>
                     </div>
@@ -237,13 +236,13 @@ export default function SkateNightPage() {
             </section>
 
             {/* Charity */}
-            <section className="bg-accent/10 border-t border-border py-20">
+            <section className="bg-background border-t border-border py-20">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
                     <h2 className="text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-8">
                         Charity Blokk
                     </h2>
 
-                    <p className="text-xl font-waterfall text-brand-fuchsia mb-12">
+                    <p className="text-xl md:text-5xl font-waterfall text-brand-fuchsia mb-12">
                         „Mert amikor a stílus találkozik az együttérzéssel, a jégen csillogó fény valakinek az életében a remény fényévé válik.”
                     </p>
 
@@ -265,8 +264,8 @@ export default function SkateNightPage() {
                             <h3 className="font-inter font-light text-foreground uppercase tracking-widest mb-4 h-12">ÁGOTA® Alapítvány</h3>
                             <p className="text-sm font-rubik font-light text-foreground/60 mb-4 h-10">Szeged, ÁGOTA® Alapítvány</p>
                             <div className="space-y-2 flex flex-col">
-                                <a href="https://www.agota.hu" target="_blank" rel="noreferrer" className="text-sm text-brand-fuchsia hover:underline">Weboldal megtekintése</a>
-                                <a href="#" target="_blank" rel="noreferrer" className="text-sm text-brand-fuchsia hover:underline">Facebook oldal</a>
+                                <a href="https://www.agotaalapitvany.hu/" target="_blank" rel="noreferrer" className="text-sm text-brand-fuchsia hover:underline">Weboldal megtekintése</a>
+                                <a href="https://www.facebook.com/agota.alapitvany/" target="_blank" rel="noreferrer" className="text-sm text-brand-fuchsia hover:underline">Facebook oldal</a>
                             </div>
                         </div>
                     </div>

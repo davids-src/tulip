@@ -86,7 +86,7 @@ export default function RajzpalyazatPage() {
                         <p className="text-lg font-rubik font-medium text-brand-fuchsia mb-6 uppercase tracking-wider">
                             Székesfehérvár – MET Aréna (Rozmaring utca 14.)
                         </p>
-                        <div className="bg-accent/5 p-8 border-l-4 border-brand-fuchsia w-full">
+                        <div className="border-l-4 border-brand-fuchsia pl-8 w-full">
                             <ul className="space-y-4 text-lg font-rubik font-light text-foreground">
                                 <li className="flex flex-col md:flex-row md:justify-between border-b border-border/50 pb-2">
                                     <span className="font-medium text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">14:00–16:00</span>
@@ -123,7 +123,7 @@ export default function RajzpalyazatPage() {
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify mb-6">
                             A pályamunkákat scannelve, elektronikus úton kell beküldeni.
                         </p>
-                        <div className="bg-accent/5 p-8 border border-border w-full">
+                        <div className="border border-border p-8 w-full">
                             <div className="mb-6">
                                 <span className="block text-sm font-inter text-foreground/60 uppercase tracking-widest mb-1">E-mail:</span>
                                 <a href="mailto:info@tulip.hu" className="text-xl font-rubik font-medium text-brand-fuchsia hover:text-[#d11133] transition-colors">info@tulip.hu</a>
@@ -174,7 +174,7 @@ export default function RajzpalyazatPage() {
                         </p>
                     </section>
 
-                    <section className="bg-accent/20 p-12 text-center border border-border mt-16 w-full">
+                    <section className="border border-border p-12 text-center mt-16 w-full">
                         <h2 className="text-2xl md:text-3xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-4">
                             Kérdés esetén
                         </h2>

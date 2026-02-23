@@ -17,7 +17,7 @@ export default function SkateNightPromo() {
 
     return (
         <>
-            <section id="skate-night-promo" className="py-24 bg-white dark:bg-[#0B0B0B] transition-colors overflow-hidden">
+            <section id="skate-night-promo" className="py-24 bg-background transition-colors overflow-hidden">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Video Column */}
@@ -121,7 +121,7 @@ export default function SkateNightPromo() {
 
                     {/* Modal card */}
                     <div
-                        className="relative bg-white dark:bg-[#111111] border border-black/10 dark:border-white/10 shadow-2xl w-full max-w-sm overflow-hidden"
+                        className="relative bg-background border border-border shadow-2xl w-full max-w-sm overflow-hidden"
                         style={{ animation: 'slideUp 0.25s cubic-bezier(0.16,1,0.3,1)' }}
                     >
                         {/* Top accent bar */}

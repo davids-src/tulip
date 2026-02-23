@@ -1,12 +1,26 @@
 [
     {
         "id": "partner1",
-        "name": "Vivi",
-        "logo": "/images/logo-white-allo_vivi.svg"
+        "name": "LeonorStyle Magazin",
+        "logoDark": "/images/partners/partner-logo-3.png",
+        "logoLight": "/images/partners/partner-logo-3.png"
     },
     {
         "id": "partner2",
-        "name": "Laci",
-        "logo": "/images/logo-elsodleges-allo_laci.svg"
+        "name": "Arimar Flowers & Decor Art",
+        "logoDark": "/images/partners/partner-logo-4.png",
+        "logoLight": "/images/partners/partner-logo-5.png"
+    },
+    {
+        "id": "partner3",
+        "name": "Leonor Esküvő & Rendezvény",
+        "logoDark": "/images/partners/partner-logo-6.png",
+        "logoLight": "/images/partners/partner-logo-6.png"
+    },
+    {
+        "id": "partner4",
+        "name": "Jegymester",
+        "logoDark": "/images/partners/jegymester-logo-light.png",
+        "logoLight": "/images/partners/jegymester-logo-dark.png"
     }
 ]
