@@ -35,7 +35,7 @@ export default function Footer() {
           {/* Right: Social icons */}
           <div className="flex space-x-6">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/tulipshophungarykft"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-brand-fuchsia transition-colors"

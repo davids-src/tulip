@@ -23,7 +23,7 @@ export default function RajzpalyazatPage() {
                 <div className="max-w-4xl mx-auto mb-16">
                     <div className="relative w-full aspect-video border border-border group">
                         <Image
-                            src="/images/rajzpalyazat.jpg"
+                            src="/images/RAJZPÁLYÁZAT(1).png"
                             alt="Rajzpályázat divattervezés"
                             fill
                             className="object-cover opacity-90 group-hover:opacity-100 transition-opacity"

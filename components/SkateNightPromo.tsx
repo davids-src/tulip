@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import YouTubePlayer from '@/components/YouTubePlayer';
 
 export default function SkateNightPromo() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -22,17 +23,10 @@ export default function SkateNightPromo() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Video Column */}
                         <div className="relative group">
-                            <div className="relative aspect-video overflow-hidden shadow-2xl border border-black/5 dark:border-white/10">
-                                <video
-                                    className="w-full h-full object-cover"
-                                    controls
-                                    playsInline
-                                    preload="metadata"
-                                >
-                                    <source src="/public/skate-night.mp4" type="video/mp4" />
-                                    A böngésződ nem támogatja a videó lejátszását.
-                                </video>
-                            </div>
+                            <YouTubePlayer
+                                videoId="zh5L5M6ZUJA"
+                                title="SKATE NIGHT by TULIP – Reklámfilm"
+                            />
                         </div>
 
                         {/* Content Column */}

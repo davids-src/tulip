@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Countdown from '@/components/Countdown';
+import YouTubePlayer from '@/components/YouTubePlayer';
 
 export default function SkateNightPage() {
     const earlyBirdDate = "2026-03-18T00:00:00+01:00";
@@ -37,17 +38,10 @@ export default function SkateNightPage() {
                     </p>
 
                     <div className="pt-12 w-full max-w-5xl mx-auto">
-                        <div className="relative aspect-video overflow-hidden shadow-2xl border border-black/5 dark:border-white/10 group bg-black">
-                            <video
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-                                controls
-                                playsInline
-                                preload="metadata"
-                            >
-                                <source src="/videos/skate-night.mp4" type="video/mp4" />
-                                A böngésződ nem támogatja a videó lejátszását.
-                            </video>
-                        </div>
+                        <YouTubePlayer
+                            videoId="zh5L5M6ZUJA"
+                            title="SKATE NIGHT by TULIP"
+                        />
                     </div>
 
                     <div className="inline-block border border-border p-6 mt-16">
