@@ -29,7 +29,7 @@ export default function SkateNightPromo() {
                                     playsInline
                                     preload="metadata"
                                 >
-                                    <source src="/videos/skate-night.mp4" type="video/mp4" />
+                                    <source src="/public/skate-night.mp4" type="video/mp4" />
                                     A böngésződ nem támogatja a videó lejátszását.
                                 </video>
                             </div>
