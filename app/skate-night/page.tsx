@@ -119,15 +119,15 @@ export default function SkateNightPage() {
 
                 <div className="space-y-6 text-lg font-rubik font-light text-foreground leading-relaxed text-justify mb-12">
                     <p>
-                        Welcome pezsgő, ajándék, B2B szektor, Marketing & Szponzor kiállítói folyosó, Textil kiállítás a rajzpályázatra beküldött pályamunkákról, ruhaipari történetekről, Fashion show exkluzív rendhagyó környezetben, exkluzív élmény, jégkorcsolyázó modellek és ruhabemutató Bréda Bia zenei szetteire.
+                        Ajándék, B2B szektor, Marketing & Szponzor kiállítói folyosó, Textil kiállítás a rajzpályázatra beküldött pályamunkákról, ruhaipari történetekről, Fashion show exkluzív rendhagyó környezetben, exkluzív élmény, jégkorcsolyázó modellek és ruhabemutató Bréda Bia zenei szetteire.
                     </p>
                     <p>
-                        Exkluzív jegyet váltó látogatóknak dekoratív környezetben gálavacsora a jégen a műsor alatt, a divatbemutatón követően after party Newikkal.
+                        Exkluzív jegyet váltó látogatóknak welcome pezsgő, dekoratív környezetben gálavacsora a jégen a műsor alatt, a divatbemutatón követően after party Newikkal.
                     </p>
                 </div>
 
                 <div className="text-center">
-                    <a href="#" className="inline-block uppercase tracking-widest text-[#d11133] hover:text-brand-fuchsia text-sm font-medium border-b border-[#d11133] hover:border-brand-fuchsia transition-all pb-1">
+                    <a href="https://www.youtube.com/watch?v=zh5L5M6ZUJA" target="_blank" rel="noopener noreferrer" className="inline-block uppercase tracking-widest text-[#d11133] hover:text-brand-fuchsia text-sm font-medium border-b border-[#d11133] hover:border-brand-fuchsia transition-all pb-1">
                         ▸ Reklámfilm megtekintése
                     </a>
                 </div>
