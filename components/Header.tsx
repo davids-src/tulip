@@ -27,7 +27,19 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Brand section */}
-          <Link href="/" className="flex items-center space-x-3 group">
+          <Link
+            href="/"
+            className="flex items-center space-x-3 group"
+            onAuxClick={(e) => {
+              if (e.button === 1) {
+                e.preventDefault();
+                window.open('/', '_blank');
+              }
+            }}
+            onMouseDown={(e) => {
+              if (e.button === 1) e.preventDefault();
+            }}
+          >
             {/* Theme-aware logo */}
             <div className="w-10 h-10 relative">
               <Image
@@ -52,6 +64,15 @@ export default function Header() {
                   href={item.href}
                   className={`flex items-center space-x-2 text-xs font-rubik font-light uppercase tracking-widest transition-all hover:text-brand-coral ${pathname === item.href ? 'text-brand-coral' : 'text-foreground'
                     }`}
+                  onAuxClick={(e) => {
+                    if (e.button === 1) {
+                      e.preventDefault();
+                      window.open(item.href, '_blank');
+                    }
+                  }}
+                  onMouseDown={(e) => {
+                    if (e.button === 1) e.preventDefault();
+                  }}
                 >
                   {item.icon && <item.icon size={16} />}
                   <span>{item.label}</span>
@@ -63,6 +84,15 @@ export default function Header() {
             <Link
               href="/skate-night"
               className="px-4 py-2 border border-brand-coral bg-background text-brand-coral text-xs font-rubik font-light uppercase tracking-widest hover:bg-brand-coral hover:text-brand-light dark:hover:text-brand-dark transition-all"
+              onAuxClick={(e) => {
+                if (e.button === 1) {
+                  e.preventDefault();
+                  window.open('/skate-night', '_blank');
+                }
+              }}
+              onMouseDown={(e) => {
+                if (e.button === 1) e.preventDefault();
+              }}
             >
               SKATE NIGHT
             </Link>
@@ -113,6 +143,15 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className={`flex items-center space-x-4 text-sm font-rubik font-light uppercase tracking-widest transition-colors ${pathname === item.href ? 'text-brand-coral' : 'text-foreground hover:text-brand-coral'
                 }`}
+              onAuxClick={(e) => {
+                if (e.button === 1) {
+                  e.preventDefault();
+                  window.open(item.href, '_blank');
+                }
+              }}
+              onMouseDown={(e) => {
+                if (e.button === 1) e.preventDefault();
+              }}
             >
               {item.icon && <item.icon size={20} />}
               <span>{item.label}</span>
@@ -122,6 +161,15 @@ export default function Header() {
             href="/skate-night"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-center px-4 py-3 border border-brand-coral text-brand-coral text-sm font-rubik font-light uppercase tracking-widest hover:bg-brand-coral hover:text-brand-light dark:hover:text-brand-dark transition-all"
+            onAuxClick={(e) => {
+              if (e.button === 1) {
+                e.preventDefault();
+                window.open('/skate-night', '_blank');
+              }
+            }}
+            onMouseDown={(e) => {
+              if (e.button === 1) e.preventDefault();
+            }}
           >
             SKATE NIGHT
           </Link>
