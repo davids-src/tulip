@@ -35,7 +35,7 @@ export default function SkateNightPromo() {
                                 {/* Titles aligned left */}
                                 <div className="mb-8">
                                     {/* Main Title - SKATE NIGHT */}
-                                    <h2 className="text-3xl md:text-5xl font-rubik font-light text-[#d11133] uppercase tracking-[0.3em] mb-2 leading-none">
+                                    <h2 className="text-3xl md:text-4xl font-rubik font-light text-[#d11133] uppercase tracking-[0.3em] mb-2 leading-none">
                                         SKATE NIGHT
                                     </h2>
 

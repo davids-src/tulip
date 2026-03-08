@@ -40,10 +40,10 @@ export default function BlogPage() {
         <main className="min-h-screen bg-background transition-colors pt-20">
             <div className="container mx-auto px-4 py-24">
                 <div className="text-center mb-16">
-                    <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-8">
+                    <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-wider mb-8">
                         Blog
                     </h1>
-                    <p className="text-5xl font-waterfall font-light text-brand-fuchsia max-w-2xl mx-auto leading-relaxed text-justify">
+                    <p className="text-5xl font-waterfall font-light text-brand-fuchsia max-w-2xl mx-auto leading-relaxed text-center">
                         A divat ott kezdődik, ahol a történet megszületik.
                     </p>
                     <p className="text-xl font-rubik font-light text-foreground max-w-2xl mx-auto leading-relaxed text-justify mt-8">

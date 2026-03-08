@@ -11,22 +11,23 @@ export default function RajzpalyazatPage() {
         <main className="min-h-screen bg-background transition-colors pt-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 <div className="text-center mb-16">
-                    <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-8">
-                        RAJZPÁLYÁZATI FELHÍVÁS<br />
-                        <span className="text-2xl mt-4 block text-brand-fuchsia tracking-[0.2em]">JÉGHERCEGNŐ RUHATERVEZŐ PÁLYÁZAT</span>
+                    <h1 className="text-4xl md:text-5xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-4">
+                        RAJZPÁLYÁZATI FELHÍVÁS
                     </h1>
-                    <p className="text-xl font-rubik font-light text-foreground max-w-3xl mx-auto leading-relaxed text-justify">
+                    <p className="text-5xl font-waterfall font-light text-brand-fuchsia max-w-2xl mx-auto leading-relaxed text-center">
+                        Jéghercegnő ruhatervező pályázat
+                    </p>
+                    <p className="text-xl font-rubik font-light text-foreground max-w-3xl mx-auto leading-relaxed text-center mt-8">
                         Fedezd fel a divattervezés világát!
                     </p>
                 </div>
 
-                <div className="max-w-4xl mx-auto mb-16">
-                    <div className="relative w-full aspect-video border border-border group">
-                        <Image
+                <div className="max-w-4xl mx-auto mb-16 px-4">
+                    <div className="relative w-full aspect-auto border border-border group overflow-hidden">
+                        <img
                             src="/images/RAJZPÁLYÁZAT(1).png"
                             alt="Rajzpályázat divattervezés"
-                            fill
-                            className="object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                            className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-500"
                         />
                     </div>
                 </div>
@@ -39,7 +40,7 @@ export default function RajzpalyazatPage() {
                     </section>
 
                     <section className="w-full">
-                        <h2 className="text-2xl md:text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-6 border-b border-[#d11133]/20 pb-4">
+                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                             A pályázat célja
                         </h2>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
@@ -48,76 +49,102 @@ export default function RajzpalyazatPage() {
                     </section>
 
                     <section className="w-full">
-                        <h2 className="text-2xl md:text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-6 border-b border-[#d11133]/20 pb-4">
+                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                             Pályázati kategóriák
                         </h2>
                         <ul className="space-y-4 text-lg font-rubik font-light text-foreground">
-                            <li className="flex items-start">
-                                <span className="text-brand-fuchsia mr-4 mt-1">•</span>
+                            <li className="flex items-center">
+                                <span className="text-brand-fuchsia mr-3 text-xs">■</span>
                                 <span>Általános iskola – alsó tagozat (6–10 év)</span>
                             </li>
-                            <li className="flex items-start">
-                                <span className="text-brand-fuchsia mr-4 mt-1">•</span>
+                            <li className="flex items-center">
+                                <span className="text-brand-fuchsia mr-3 text-xs">■</span>
                                 <span>Általános iskola – felső tagozat (11–14 év)</span>
                             </li>
-                            <li className="flex items-start">
-                                <span className="text-brand-fuchsia mr-4 mt-1">•</span>
+                            <li className="flex items-center">
+                                <span className="text-brand-fuchsia mr-3 text-xs">■</span>
                                 <span>Középiskola (11–18 év)</span>
                             </li>
                         </ul>
                     </section>
 
                     <section className="w-full">
-                        <h2 className="text-2xl md:text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-6 border-b border-[#d11133]/20 pb-4">
+                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                             Díjazás
                         </h2>
-                        <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify mb-6">
-                            Kategóriánként 1–3. helyezett kerül díjazásra. Az első helyezett pályamunkák valódi ruhadarabként megvalósításra kerülnek és bemutatásra kerülnek a SKATE NIGHT by TULIP divatbemutatón.
-                        </p>
-                        <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
-                            Minden dobogós résztvevő kreatív csomagot, könyvjutalmat és 2 tiszteletjegyet kap (1 diák + 1 kísérő).
-                        </p>
+                        <div className="space-y-6 text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
+                            <p>
+                                Kategóriánként <span className="font-medium text-foreground">1–3. helyezett</span> kerül díjazásra.
+                            </p>
+
+                            <p className="font-medium text-foreground">
+                                1. helyezettek különleges jutalma:
+                            </p>
+
+                            <p>
+                                A győztes pályamunka <span className="font-medium text-foreground">megvalósításra kerül</span> egy valódi ruhadarabként, és <span className="font-medium text-foreground">bemutatjuk a SKATE NIGHT by TULIP divatbemutatón!</span>
+                            </p>
+
+                            <p>
+                                Ezen kívül minden dobogós résztvevő <span className="font-medium text-foreground">kreatív csomagot és könyvjutalmat kap</span> valamint <span className="font-medium text-foreground">2 db tiszteletjegyet</span> (1 diák + 1 kísérő), hogy átvehessék a díjukat személyesen a helyszínen. Aki nem tud részt venni személyesen, postai úton kapja meg a nyereményét a rendezvényt követően.
+                            </p>
+                        </div>
                     </section>
 
                     <section className="w-full">
-                        <h2 className="text-2xl md:text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-6 border-b border-[#d11133]/20 pb-4">
+                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                             A divatbemutató részletei
                         </h2>
-                        <p className="text-lg font-rubik font-medium text-brand-fuchsia mb-6 uppercase tracking-wider">
+                        <p className="text-lg font-rubik font-light text-foreground mb-6">
+                            A díjátadó a divatbemutató fináléját követően lesz.
+                        </p>
+                        <p className="text-lg font-rubik text-foreground mb-1 tracking-wider">
+                            Helyszín:
+                        </p>
+                        <p className="text-lg font-rubik font-medium text-foreground mb-6">
                             Székesfehérvár – MET Aréna (Rozmaring utca 14.)
                         </p>
-                        <div className="border-l-4 border-brand-fuchsia pl-8 w-full">
-                            <ul className="space-y-4 text-lg font-rubik font-light text-foreground">
-                                <li className="flex flex-col md:flex-row md:justify-between border-b border-border/50 pb-2">
-                                    <span className="font-medium text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">14:00–16:00</span>
-                                    <span className="md:w-2/3">Kapunyitás és regisztráció</span>
+                        <p className="text-lg font-rubik text-foreground mb-4 tracking-wider">
+                            Idővonal:
+                        </p>
+                        <div className="w-full">
+                            <ul className="space-y-6 text-lg font-rubik font-light text-foreground">
+                                <li className="flex flex-col border-b border-border/50 pb-4">
+                                    <div className="flex flex-col md:flex-row md:justify-between items-baseline">
+                                        <span className="text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">14:00–16:00</span>
+                                        <span className="md:w-2/3">Kapunyitás / regisztráció</span>
+                                    </div>
+                                    <p className="text-sm text-brand-coral mt-2 font-light md:ml-[33.333333%]">16:00 után a beléptetés és regisztráció lezárul! Nem lesz lehetőség az épületbe bejönni.</p>
                                 </li>
-                                <li className="flex flex-col md:flex-row md:justify-between border-b border-border/50 pb-2">
-                                    <span className="font-medium text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">14:00–17:00</span>
-                                    <span className="md:w-2/3">Kiállítók, marketing és termékbemutatók</span>
+                                <li className="flex flex-col md:flex-row md:justify-between border-b border-border/50 pb-4">
+                                    <span className="text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">14:00–17:00</span>
+                                    <span className="md:w-2/3">B2B / Marketing / Termékbemutató / Kiállítók / Shop / <span className="font-medium text-foreground">Pályamunkák</span> – (Kiállítói folyosó)</span>
                                 </li>
-                                <li className="flex flex-col md:flex-row md:justify-between border-b border-border/50 pb-2">
-                                    <span className="font-medium text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">17:00–17:30</span>
-                                    <span className="md:w-2/3">Ülőhelyek elfoglalása</span>
+                                <li className="flex flex-col md:flex-row md:justify-between border-b border-border/50 pb-4">
+                                    <span className="text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">17:00–17:30</span>
+                                    <div className="md:w-2/3 flex flex-col">
+                                        <span>Ülőhelyek elfoglalása</span>
+                                        <span className="mt-1">(Normál jegy "nézőtér szektorok" Exkluzív jegy/asztal "jégpálya")</span>
+                                    </div>
                                 </li>
-                                <li className="flex flex-col md:flex-row md:justify-between border-b border-border/50 pb-2">
-                                    <span className="font-medium text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">17:30–18:45</span>
-                                    <span className="md:w-2/3">Fashion Show I. – Bréda Bia</span>
+                                <li className="flex flex-col md:flex-row md:justify-between border-b border-border/50 pb-4">
+                                    <span className="text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">17:30–18:45</span>
+                                    <span className="md:w-2/3">Fashion Show I. - Bréda Bia</span>
                                 </li>
-                                <li className="flex flex-col md:flex-row md:justify-between border-b border-border/50 pb-2">
-                                    <span className="font-medium text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">18:45–19:15</span>
+                                <li className="flex flex-col md:flex-row md:justify-between border-b border-border/50 pb-4">
+                                    <span className="text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">18:45–19:15</span>
                                     <span className="md:w-2/3">Szünet</span>
                                 </li>
                                 <li className="flex flex-col md:flex-row md:justify-between">
-                                    <span className="font-medium text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">19:15–20:30</span>
-                                    <span className="md:w-2/3">Fashion Show II. – Finálé és eredményhirdetés</span>
+                                    <span className="text-brand-fuchsia mb-1 md:mb-0 md:w-1/3">19:15–20:30</span>
+                                    <span className="md:w-2/3">Fashion Show II. - Bréda Bia, Finálé, Rajzpályázat eredményhirdetés</span>
                                 </li>
                             </ul>
                         </div>
                     </section>
 
                     <section className="w-full">
-                        <h2 className="text-2xl md:text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-6 border-b border-[#d11133]/20 pb-4">
+                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                             Jelentkezés és beküldés módja
                         </h2>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify mb-6">
@@ -130,7 +157,7 @@ export default function RajzpalyazatPage() {
                             </div>
                             <div className="mb-6">
                                 <span className="block text-sm font-inter text-foreground/60 uppercase tracking-widest mb-1">Tárgy:</span>
-                                <span className="text-lg font-rubik text-foreground">JÉGHERCEGNŐ RAJZPÁLYÁZAT</span>
+                                <span className="text-lg font-rubik text-foreground">Jéghercegnnő ruhatervező pályázat</span>
                             </div>
                             <div>
                                 <span className="block text-sm font-inter text-foreground/60 uppercase tracking-widest mb-4">Kötelezően megadandó adatok:</span>
@@ -138,7 +165,7 @@ export default function RajzpalyazatPage() {
                                     <li className="flex items-center"><span className="text-brand-fuchsia mr-3 text-xs">■</span>Név</li>
                                     <li className="flex items-center"><span className="text-brand-fuchsia mr-3 text-xs">■</span>Életkor</li>
                                     <li className="flex items-center"><span className="text-brand-fuchsia mr-3 text-xs">■</span>E-mail cím</li>
-                                    <li className="flex items-center"><span className="text-brand-fuchsia mr-3 text-xs">■</span>Iskola pontos neve</li>
+                                    <li className="flex items-center"><span className="text-brand-fuchsia mr-3 text-xs">■</span>Helyszín, iskola pontos neve</li>
                                     <li className="flex items-center"><span className="text-brand-fuchsia mr-3 text-xs">■</span>Tagozat</li>
                                 </ul>
                             </div>
@@ -147,7 +174,7 @@ export default function RajzpalyazatPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
                         <section>
-                            <h2 className="text-xl md:text-2xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-4 border-b border-[#d11133]/20 pb-4">
+                            <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                                 Beküldési határidő
                             </h2>
                             <p className="text-xl font-rubik font-medium text-foreground">
@@ -156,7 +183,7 @@ export default function RajzpalyazatPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-xl md:text-2xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-4 border-b border-[#d11133]/20 pb-4">
+                            <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                                 Értesítés a nyertesekről
                             </h2>
                             <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
@@ -166,11 +193,11 @@ export default function RajzpalyazatPage() {
                     </div>
 
                     <section className="w-full">
-                        <h2 className="text-2xl md:text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-6 border-b border-[#d11133]/20 pb-4">
+                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                             Adatkezelési és megjelenési hozzájárulás
                         </h2>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
-                            A pályázók hozzájárulnak ahhoz, hogy nevük, életkoruk, tagozatuk és iskolájuk megjelenhet a www.tulip.hu oldalon, valamint a Tulip Shop Hungary Kft. közösségi média felületein.
+                            A pályázók hozzájárulnak ahhoz, hogy nevük, életkoruk, tagozatuk és iskolájuk megjelenhet a www.tulip.hu oldalon, valamint a Tulip Shop Hungary Kft. közösségi média felületein. Továbbá a beküldött alkotások kiállitásra kerülnek a MET Aréna kiallitói folyosoján, a textil kiállitás keretében szemelyes adataik (név, életkor, iksola, tagozat) megjelölésével. A kiállitáson minden pályamunka és természetesen a dijazott alkotások is megtekinthetök lesznek.
                         </p>
                     </section>
 
@@ -178,7 +205,7 @@ export default function RajzpalyazatPage() {
                         <h2 className="text-2xl md:text-3xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-4">
                             Kérdés esetén
                         </h2>
-                        <p className="text-lg font-rubik font-light text-foreground mb-6">
+                        <p className="text-lg font-rubik font-light text-center mb-6">
                             Fordulj hozzánk bizalommal:
                         </p>
                         <a

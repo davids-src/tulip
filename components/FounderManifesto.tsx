@@ -8,7 +8,7 @@ export default function FounderManifesto() {
 
                     {/* Block 1 */}
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-3xl font-inter font-light text-[#d11133] uppercase tracking-widest text-center mb-8">
+                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-widest text-center mb-8">
                             Mérnöki precizitás és művészi érzékenység
                         </h2>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
@@ -41,7 +41,7 @@ export default function FounderManifesto() {
 
                     {/* Block 2 */}
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-3xl font-inter font-light text-[#d11133] uppercase tracking-widest text-center mb-8">
+                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-widest text-center mb-8">
                             Küldetésem
                         </h2>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
@@ -57,7 +57,7 @@ export default function FounderManifesto() {
 
                     {/* Block 3 */}
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-3xl font-inter font-light text-[#d11133] uppercase tracking-widest text-center mb-8">
+                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-widest text-center mb-8">
                             A nő aki Tulip ruhát visel
                         </h2>
                         <p className="text-lg font-rubik font-light text-foreground text-center mb-4">

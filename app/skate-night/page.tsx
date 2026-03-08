@@ -28,7 +28,7 @@ export default function SkateNightPage() {
             {/* Hero Section */}
             <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 border-b border-border text-center">
                 <div className="max-w-4xl mx-auto space-y-8">
-                    <h1 className="text-3xl md:text-5xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] leading-tight">
+                    <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] leading-tight">
                         SKATE NIGHT by TULIP <br />
                         <span className="text-2xl md:text-3xl block mt-4 text-brand-fuchsia tracking-[0.2em]">A stílus a jégre költözik!</span>
                     </h1>
@@ -72,7 +72,7 @@ export default function SkateNightPage() {
 
             {/* Vízió */}
             <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 max-w-4xl">
-                <h2 className="text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-8 text-center">Vízió</h2>
+                <h2 className="text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-8 text-center">Vízió</h2>
                 <p className="text-xl md:text-5xl font-waterfall text-brand-fuchsia text-center leading-relaxed">
                     „A divat számomra sokkal több, mint ruhák tervezése: párbeszéd önmagunkkal, eszköz a női identitás kifejezésére és a belső erő megmutatásának természetes formája.”
                 </p>
@@ -81,7 +81,7 @@ export default function SkateNightPage() {
             {/* 6 Titokzatos Világ */}
             <section className="bg-background border-y border-border py-24">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-16 text-center">6 Titokzatos Világ</h2>
+                    <h2 className="text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-16 text-center">6 Titokzatos Világ</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {worlds.map((world, index) => (
                             <div key={index} className="border border-border p-8 bg-background group hover:border-[#d11133] transition-colors relative overflow-hidden">
@@ -99,7 +99,7 @@ export default function SkateNightPage() {
 
             {/* Mi vár rád? */}
             <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 max-w-5xl">
-                <h2 className="text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-12 text-center">Mi vár rád?</h2>
+                <h2 className="text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-12 text-center">Mi vár rád?</h2>
 
                 {/* 4 colors images */}
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16 max-w-5xl mx-auto">
@@ -148,7 +148,9 @@ export default function SkateNightPage() {
                             />
                         </div>
                         <div className="space-y-6">
-                            <h3 className="text-2xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em]">Ötletgazda: Oszoli Nikolett</h3>
+                            <h3 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
+                                Ötletgazda: <span className="whitespace-nowrap">Oszoli Nikolett</span>
+                            </h3>
                             <div className="text-base font-rubik font-light leading-relaxed text-justify space-y-4 text-foreground/80">
                                 <p>
                                     “Ruhaipari szakemberként, a divatvilág magával ragadt és a székesfehérvári MET Aréna ad otthont az első kollekcióm bemutatásának amelyre közel 10 éve tudatosan készülök. A helyszín választás során olyan környezetet kerestem ami exkluzív és személyiségemet tükrözi, azonosulni tudok vele illetve rendhagyó módon eltér a korábbi évek trendkövető magatartásától, a kifutók világától. Szeretném a ruhát mozgásában bemutatni.”
@@ -232,7 +234,7 @@ export default function SkateNightPage() {
             {/* Charity */}
             <section className="bg-background border-t border-border py-20">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
-                    <h2 className="text-3xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-8">
+                    <h2 className="text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-8">
                         Charity Blokk
                     </h2>
 
