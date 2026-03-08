@@ -19,8 +19,32 @@
     },
     {
         "id": "partner4",
-        "name": "Jegymester",
+        "name": "Jegymester Kft.",
         "logoDark": "/images/partners/jegymester-logo-light.png",
         "logoLight": "/images/partners/jegymester-logo-dark.png"
+    },
+    {
+        "id": "partner5",
+        "name": "Beauty for You by Mária Budai",
+        "logoDark": "/images/partners/BudaiMariaLogo.jpeg",
+        "logoLight": "/images/partners/BudaiMariaLogo.jpeg"
+    },
+    {
+        "id": "partner6",
+        "name": "Faragó László, üzleti fotós",
+        "logoDark": "/images/partners/logo-laci.svg",
+        "logoLight": "/images/partners/logo-laci.svg"
+    },
+    {
+        "id": "partner7",
+        "name": "Kecskeméti Vivien grafikus és WebDesigner",
+        "logoDark": "/images/partners/logo-vivi.svg",
+        "logoLight": "/images/partners/logo-vivi.svg"
+    },
+    {
+        "id": "partner8",
+        "name": "Szövegírás a vevőid nyelvén!",
+        "logoDark": "/images/partners/logo-color (1).png",
+        "logoLight": "/images/partners/logo-color (1).png"
     }
 ]

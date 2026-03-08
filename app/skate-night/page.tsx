@@ -214,11 +214,11 @@ export default function SkateNightPage() {
                         <ul className="space-y-6 font-rubik font-light text-foreground/80 text-justify">
                             <li>
                                 <span className="font-medium text-foreground block mb-1 uppercase tracking-widest text-sm">Normál jegy:</span>
-                                Welcome pezsgő, divatbemutató, after party.
+                                Divatbemutató, after party.
                             </li>
                             <li>
                                 <span className="font-medium text-[#d11133] block mb-1 uppercase tracking-widest text-sm">Exkluzív jegy:</span>
-                                Kiemelt figyelem: gálavacsora 10 fős körasztaloknál közvetlenül a jégen - Csak 50 elérhető hely az elit számára.
+                                Kiemelt figyelem: Welcome pezsgő, gálavacsora 10 fős körasztaloknál közvetlenül a jégen - Csak 50 elérhető hely az elit számára.
                             </li>
                             <li className="pt-4 border-t border-border">
                                 <span className="font-medium text-foreground block mb-1 uppercase tracking-widest text-sm">Early bird vége:</span>

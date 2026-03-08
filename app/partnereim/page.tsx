@@ -53,8 +53,11 @@ export default function PartnereimPage() {
                                 </div>
 
                                 {/* Partner neve alul */}
-                                <div className="border-t border-border px-4 py-3 text-center">
-                                    <p className="text-xs font-inter font-light text-foreground/60 uppercase tracking-widest group-hover:text-[#d11133] transition-colors duration-300">
+                                <div className="border-t border-border px-4 py-3 flex items-center justify-center min-h-[60px]">
+                                    <p
+                                        className="text-xs font-inter font-light text-foreground/60 uppercase tracking-widest group-hover:text-[#d11133] transition-colors duration-300 text-justify w-full"
+                                        style={{ textAlignLast: 'center' }}
+                                    >
                                         {partner.name}
                                     </p>
                                 </div>

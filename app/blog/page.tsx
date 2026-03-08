@@ -2,6 +2,14 @@ import Link from 'next/link';
 
 const blogPosts = [
     {
+        id: 'divatbemutato-a-jegen',
+        title: 'Divatbemutató a jégen',
+        subtitle: 'Oszoli Nikolett új kollekciót mutat be Székesfehérváron',
+        date: '2026. március 8.',
+        excerpt: 'A székesfehérvári MET Aréna ad otthont április 18-án egy rendhagyó divatbemutatónak, amely eltér a hagyományos kifutós formátumtól. Az esemény koncepciója szerint a kollekció darabjai nem statikus környezetben, hanem mozgás közben, műkorcsolyázó modelleken jelennek meg a jégcsarnok küzdőterén.',
+        href: '/blog/divatbemutato-a-jegen',
+    },
+    {
         id: 'tulip-szuletese-interju',
         title: 'A Tulip születése',
         subtitle: 'Interjú Oszoli Nikolettel, a magyar divat új hangjával',
