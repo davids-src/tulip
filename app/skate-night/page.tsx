@@ -30,10 +30,10 @@ export default function SkateNightPage() {
                 <div className="max-w-4xl mx-auto space-y-8">
                     <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] leading-tight">
                         SKATE NIGHT by TULIP <br />
-                        <span className="text-2xl md:text-3xl block mt-4 text-brand-fuchsia tracking-[0.2em]">A stílus a jégre költözik!</span>
+                        <span className="text-5xl md:text-6xl block mt-8 font-waterfall font-light text-brand-fuchsia leading-none">A stílus a jégre költözik!</span>
                     </h1>
 
-                    <p className="text-xl md:text-2xl font-rubik font-light text-foreground/80 tracking-wide uppercase">
+                    <p className="text-xl md:text-2xl font-rubik font-light text-foreground/80 tracking-wide uppercase text-center">
                         A trendek kedvelőinek exkluzív élménye.
                     </p>
 
@@ -44,13 +44,15 @@ export default function SkateNightPage() {
                         />
                     </div>
 
-                    <div className="inline-block border border-border p-6 mt-16">
-                        <p className="text-lg md:text-xl font-rubik font-medium text-foreground uppercase tracking-widest">
-                            2026. április 18. szombat
-                        </p>
-                        <p className="text-base text-brand-fuchsia mt-2 tracking-widest uppercase">
-                            Székesfehérvár, MET Aréna
-                        </p>
+                    <div className="flex justify-center">
+                        <div className="inline-block border border-border p-6 mt-16">
+                            <p className="text-lg md:text-xl font-rubik font-medium text-foreground uppercase tracking-widest">
+                                2026. április 18. szombat
+                            </p>
+                            <p className="text-base text-brand-fuchsia mt-2 tracking-widest uppercase">
+                                Székesfehérvár, MET Aréna
+                            </p>
+                        </div>
                     </div>
 
                     <div className="pt-8">
@@ -84,8 +86,8 @@ export default function SkateNightPage() {
                     <h2 className="text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-16 text-center">6 Titokzatos Világ</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {worlds.map((world, index) => (
-                            <div key={index} className="border border-border p-8 bg-background group hover:border-[#d11133] transition-colors relative overflow-hidden">
-                                <h3 className="text-xl font-inter font-light uppercase tracking-widest text-foreground mb-4 group-hover:text-[#d11133] transition-colors">
+                            <div key={index} className="border border-border p-8 bg-background group hover:border-brand-fuchsia transition-colors relative overflow-hidden text-center md:text-left">
+                                <h3 className="text-xl font-inter font-light uppercase tracking-widest text-foreground mb-4 group-hover:text-brand-fuchsia transition-colors">
                                     {world.title}
                                 </h3>
                                 <p className="text-base font-rubik font-light text-foreground/80 leading-relaxed italic">
@@ -151,7 +153,7 @@ export default function SkateNightPage() {
                             <h3 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                                 Ötletgazda: <span className="whitespace-nowrap">Oszoli Nikolett</span>
                             </h3>
-                            <div className="text-base font-rubik font-light leading-relaxed text-justify space-y-4 text-foreground/80">
+                            <div className="text-base font-rubik font-light leading-relaxed text-justify space-y-4 text-foreground/80 italic">
                                 <p>
                                     “Ruhaipari szakemberként, a divatvilág magával ragadt és a székesfehérvári MET Aréna ad otthont az első kollekcióm bemutatásának amelyre közel 10 éve tudatosan készülök. A helyszín választás során olyan környezetet kerestem ami exkluzív és személyiségemet tükrözi, azonosulni tudok vele illetve rendhagyó módon eltér a korábbi évek trendkövető magatartásától, a kifutók világától. Szeretném a ruhát mozgásában bemutatni.”
                                 </p>
@@ -201,7 +203,7 @@ export default function SkateNightPage() {
                         <ul className="space-y-6">
                             {stars.map((star, idx) => (
                                 <li key={idx} className="flex flex-col">
-                                    <span className="font-rubik font-medium text-lg uppercase tracking-wider text-foreground">{star.name}</span>
+                                    <span className="font-medium text-foreground block mb-1 uppercase tracking-widest text-sm">{star.name}</span>
                                     <span className="font-rubik font-light text-foreground/70">{star.desc}</span>
                                 </li>
                             ))}
@@ -219,7 +221,7 @@ export default function SkateNightPage() {
                                 Divatbemutató, after party.
                             </li>
                             <li>
-                                <span className="font-medium text-[#d11133] block mb-1 uppercase tracking-widest text-sm">Exkluzív jegy:</span>
+                                <span className="font-medium text-brand-coral block mb-1 uppercase tracking-widest text-sm">Exkluzív jegy:</span>
                                 Kiemelt figyelem: Welcome pezsgő, gálavacsora 10 fős körasztaloknál közvetlenül a jégen - Csak 50 elérhető hely az elit számára.
                             </li>
                             <li className="pt-4 border-t border-border">

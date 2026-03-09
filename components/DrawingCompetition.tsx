@@ -12,8 +12,8 @@ export default function DrawingCompetition() {
                         <h2 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-4">
                             RAJZPÁLYÁZATI FELHÍVÁS
                         </h2>
-                        <p className="text-xl md:text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em]">
-                            JÉGHERCEGNŐ RUHATERVEZŐ PÁLYÁZAT
+                        <p className="text-5xl font-waterfall font-light text-brand-fuchsia max-w-2xl mx-auto leading-relaxed text-center">
+                            Jéghercegnő ruhatervező pályázat
                         </p>
                     </div>
 

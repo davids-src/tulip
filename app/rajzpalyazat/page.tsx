@@ -11,7 +11,7 @@ export default function RajzpalyazatPage() {
         <main className="min-h-screen bg-background transition-colors pt-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-4">
+                    <h1 className="text-4xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-4">
                         RAJZPÁLYÁZATI FELHÍVÁS
                     </h1>
                     <p className="text-5xl font-waterfall font-light text-brand-fuchsia max-w-2xl mx-auto leading-relaxed text-center">
@@ -101,10 +101,10 @@ export default function RajzpalyazatPage() {
                         <p className="text-lg font-rubik text-foreground mb-1 tracking-wider">
                             Helyszín:
                         </p>
-                        <p className="text-lg font-rubik font-medium text-foreground mb-6">
+                        <p className="text-lg font-rubik font-medium text-foreground mb-16">
                             Székesfehérvár – MET Aréna (Rozmaring utca 14.)
                         </p>
-                        <p className="text-lg font-rubik text-foreground mb-4 tracking-wider">
+                        <p className="text-lg font-rubik text-foreground mb-6 tracking-wider">
                             Idővonal:
                         </p>
                         <div className="w-full">
@@ -157,7 +157,7 @@ export default function RajzpalyazatPage() {
                             </div>
                             <div className="mb-6">
                                 <span className="block text-sm font-inter text-foreground/60 uppercase tracking-widest mb-1">Tárgy:</span>
-                                <span className="text-lg font-rubik text-foreground">Jéghercegnnő ruhatervező pályázat</span>
+                                <span className="text-lg font-rubik text-foreground">Jéghercegnő ruhatervező pályázat</span>
                             </div>
                             <div>
                                 <span className="block text-sm font-inter text-foreground/60 uppercase tracking-widest mb-4">Kötelezően megadandó adatok:</span>
@@ -172,24 +172,18 @@ export default function RajzpalyazatPage() {
                         </div>
                     </section>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
-                        <section>
-                            <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
-                                Beküldési határidő
-                            </h2>
-                            <p className="text-xl font-rubik font-medium text-foreground">
-                                2026. március 31.
-                            </p>
-                        </section>
-
-                        <section>
-                            <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
-                                Értesítés a nyertesekről
-                            </h2>
-                            <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
+                    <div className="w-full flex flex-col md:flex-row items-center justify-center gap-x-12 lg:gap-x-24 gap-y-12 py-12 border-y border-brand-fuchsia/10">
+                        <div className="text-center md:text-left flex-1">
+                            <h3 className="text-sm font-inter text-brand-fuchsia tracking-widest mb-2">Beküldési határidő</h3>
+                            <p className="text-2xl font-rubik font-light text-foreground">2026. március 31.</p>
+                        </div>
+                        <div className="hidden md:block w-px h-16 bg-brand-fuchsia/20"></div>
+                        <div className="text-center md:text-left flex-[1.5]">
+                            <h3 className="text-sm font-inter text-brand-fuchsia uppercase tracking-widest mb-2">Értesítés a nyertesekről</h3>
+                            <p className="text-lg font-rubik font-light text-foreground leading-relaxed">
                                 2026. április 10-ig elektronikus úton, a jelentkezéskor megadott e-mail címre.
                             </p>
-                        </section>
+                        </div>
                     </div>
 
                     <section className="w-full">
@@ -197,12 +191,12 @@ export default function RajzpalyazatPage() {
                             Adatkezelési és megjelenési hozzájárulás
                         </h2>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
-                            A pályázók hozzájárulnak ahhoz, hogy nevük, életkoruk, tagozatuk és iskolájuk megjelenhet a www.tulip.hu oldalon, valamint a Tulip Shop Hungary Kft. közösségi média felületein. Továbbá a beküldött alkotások kiállitásra kerülnek a MET Aréna kiallitói folyosoján, a textil kiállitás keretében szemelyes adataik (név, életkor, iksola, tagozat) megjelölésével. A kiállitáson minden pályamunka és természetesen a dijazott alkotások is megtekinthetök lesznek.
+                            A pályázók hozzájárulnak ahhoz, hogy nevük, életkoruk, tagozatuk és iskolájuk megjelenhet a www.tulip.hu oldalon, valamint a Tulip Shop Hungary Kft. közösségi média felületein. Továbbá a beküldött alkotások kiállitásra kerülnek a MET Aréna kiallitói folyosóján, a textil kiállitás keretében szemelyes adataik (név, életkor, iskola, tagozat) megjelölésével. A kiállitáson minden pályamunka és természetesen a dijazott alkotások is megtekinthetöek lesznek.
                         </p>
                     </section>
 
                     <section className="border border-border p-12 text-center mt-16 w-full">
-                        <h2 className="text-2xl md:text-3xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-4">
+                        <h2 className="text-2xl md:text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-4">
                             Kérdés esetén
                         </h2>
                         <p className="text-lg font-rubik font-light text-center mb-6">

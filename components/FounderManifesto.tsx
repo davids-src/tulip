@@ -8,7 +8,7 @@ export default function FounderManifesto() {
 
                     {/* Block 1 */}
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-widest text-center mb-8">
+                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] text-center mb-8">
                             Mérnöki precizitás és művészi érzékenység
                         </h2>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
@@ -24,8 +24,8 @@ export default function FounderManifesto() {
                             </p>
                             <ul className="space-y-2">
                                 {['elegánssá', 'nőiessé', 'technológiailag átgondolttá', 'egyedivé és kis szériássá'].map((item, index) => (
-                                    <li key={index} className="flex items-center text-lg font-rubik font-light text-foreground">
-                                        <span className="w-2 h-2 bg-[#d11133] rounded-full mr-4"></span>
+                                    <li key={index} className="flex items-center text-lg font-rubik font-light text-brand-fuchsia">
+                                        <span className="text-brand-fuchsia mr-3 text-xs">■</span>
                                         {item}
                                     </li>
                                 ))}
@@ -41,7 +41,7 @@ export default function FounderManifesto() {
 
                     {/* Block 2 */}
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-widest text-center mb-8">
+                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] text-center mb-8">
                             Küldetésem
                         </h2>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
@@ -57,13 +57,13 @@ export default function FounderManifesto() {
 
                     {/* Block 3 */}
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-widest text-center mb-8">
+                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] text-center mb-8">
                             A nő aki Tulip ruhát visel
                         </h2>
-                        <p className="text-lg font-rubik font-light text-foreground text-center mb-4">
+                        <p className="text-lg font-rubik font-light text-foreground mb-4">
                             A Tulip azoknak a nőknek szól, akik:
                         </p>
-                        <ul className="space-y-3 max-w-xl mx-auto mb-6">
+                        <ul className="space-y-3 mb-6">
                             {[
                                 'harmóniában élnek önmagukkal',
                                 'szeretik a letisztult, elegáns megjelenést',
@@ -71,7 +71,7 @@ export default function FounderManifesto() {
                                 'személyiségükben erősek, stílusukban kifinomultak'
                             ].map((item, index) => (
                                 <li key={index} className="flex items-center text-lg font-rubik font-light text-foreground">
-                                    <span className="text-[#d11133] mr-3">•</span>
+                                    <span className="text-brand-fuchsia mr-3 text-xs">■</span>
                                     {item}
                                 </li>
                             ))}
@@ -82,8 +82,8 @@ export default function FounderManifesto() {
                     </div>
 
                     {/* Closing Text */}
-                    <div className="pt-12 border-t border-border text-center space-y-6">
-                        <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify max-w-2xl mx-auto">
+                    <div className="pt-12 border-t border-border space-y-6">
+                        <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
                             A Tulip erről szól: a női út szépségéről, a tudatos alkotás erejéről és arról a hitről,
                             hogy értéket teremteni felelősség – de kiváltság is.
                         </p>

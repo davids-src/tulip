@@ -38,10 +38,10 @@ export default function ArculatSection() {
                     <h3 className="text-xl md:text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-6">
                         Arculati Színvilág
                     </h3>
-                    <p className="text-xl md:text-2xl font-waterfall text-brand-fuchsia leading-relaxed text-center">
-                        &quot;Erő, harmónia, egyediség – négy színben megrajzolva.&quot;
+                    <p className="text-5xl md:text-5xl font-waterfall font-light text-brand-fuchsia max-w-5xl mx-auto leading-none text-center py-4">
+                        Erő, harmónia, egyediség – négy színben megrajzolva
                     </p>
-                    <p className="text-base font-rubik font-light text-foreground/80 mt-4 leading-relaxed tracking-wide text-center">
+                    <p className="text-xl font-rubik font-light text-foreground max-w-3xl mx-auto leading-relaxed text-center mt-8">
                         A modell rajzokon vázolt ruhák a fináléban lesznek bemutatva.
                     </p>
                 </div>

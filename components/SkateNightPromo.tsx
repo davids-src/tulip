@@ -40,7 +40,7 @@ export default function SkateNightPromo() {
                                     </h2>
 
                                     {/* Subtitle - FASHION SHOW & AFTER PARTY */}
-                                    <h3 className="text-lg md:text-xl font-rubik font-light text-[#d11133] uppercase tracking-widest">
+                                    <h3 className="text-lg md:text-xl font-rubik font-light text-fuchsia uppercase tracking-widest">
                                         FASHION SHOW &amp; AFTER PARTY
                                     </h3>
                                 </div>
