@@ -8,7 +8,7 @@ export default function FounderManifesto() {
 
                     {/* Block 1 */}
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] text-center mb-8">
+                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                             Mérnöki precizitás és művészi érzékenység
                         </h2>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
@@ -41,7 +41,7 @@ export default function FounderManifesto() {
 
                     {/* Block 2 */}
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] text-center mb-8">
+                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                             Küldetésem
                         </h2>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
@@ -57,25 +57,27 @@ export default function FounderManifesto() {
 
                     {/* Block 3 */}
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] text-center mb-8">
+                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
                             A nő aki Tulip ruhát visel
                         </h2>
-                        <p className="text-lg font-rubik font-light text-foreground mb-4">
-                            A Tulip azoknak a nőknek szól, akik:
-                        </p>
-                        <ul className="space-y-3 mb-6">
-                            {[
-                                'harmóniában élnek önmagukkal',
-                                'szeretik a letisztult, elegáns megjelenést',
-                                'értékelik az egyediség és a luxus finom jelenlétét',
-                                'személyiségükben erősek, stílusukban kifinomultak'
-                            ].map((item, index) => (
-                                <li key={index} className="flex items-center text-lg font-rubik font-light text-foreground">
-                                    <span className="text-brand-fuchsia mr-3 text-xs">■</span>
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
+                        <div className="border border-border p-8">
+                            <p className="text-lg font-rubik font-light text-foreground mb-4">
+                                A Tulip azoknak a nőknek szól, akik:
+                            </p>
+                            <ul className="space-y-3">
+                                {[
+                                    'harmóniában élnek önmagukkal',
+                                    'szeretik a letisztult, elegáns megjelenést',
+                                    'értékelik az egyediség és a luxus finom jelenlétét',
+                                    'személyiségükben erősek, stílusukban kifinomultak'
+                                ].map((item, index) => (
+                                    <li key={index} className="flex items-center text-lg font-rubik font-light text-brand-fuchsia">
+                                        <span className="text-brand-fuchsia mr-3 text-xs">■</span>
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                         <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
                             A ruháim célja, hogy ezt a belső szépséget és magabiztosságot minden pillanatban láthatóvá tegyék.
                         </p>

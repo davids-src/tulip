@@ -46,9 +46,9 @@ export default function ContactPage() {
               </a>
             </div>
 
-            <div className="flex items-center justify-center space-x-4 p-6 border border-border">
+            <div className="flex items-center justify-center space-x-4 p-6 border border-border hover:border-brand-fuchsia transition-colors group">
               <MapPin size={28} className="text-brand-fuchsia shrink-0" />
-              <span className="text-foreground font-rubik font-light text-2xl">
+              <span className="text-foreground font-rubik font-light text-2xl group-hover:text-brand-fuchsia transition-colors">
                 HU, 8000 Székesfehérvár
               </span>
             </div>

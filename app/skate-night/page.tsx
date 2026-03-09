@@ -9,12 +9,12 @@ export default function SkateNightPage() {
     const earlyBirdDate = "2026-03-18T00:00:00+01:00";
 
     const worlds = [
-        { title: "Sport: A mozgás dinamikája.", text: "„Ahol a kifinomult elegancia és a teljesítmény eggyé válik. A mozgás művészete a jégen.”" },
-        { title: "Costume: A teatralitás határai.", text: "„Stílus irodától a reflektorfényig. Karizmatikus jelenlét minden szerepben.”" },
-        { title: "Night: Az éjszaka érzékisége.", text: "„Érzéki suttogás az éjszakában. Babydollok olyan nőknek, akik ismerik a csábítás titkait.”" },
-        { title: "Event: A klasszikus elegancia (Chanel stílus).", text: "„Varázslatos esték, formabontó sziluettek. Finoman formált luxus és elegancia találkozása.”" },
-        { title: "Wedding: Fekete-törtfehér dráma.", text: "„Kézzel varrt csipke csodák az Atelier falai közül. Mert az esküvőtök sem csak egy nap, hanem örökké emlékezetes sziluett.”" },
-        { title: "Diamond: A totális ragyogás", text: "„Apró csoda, végtelen ragyogás. A gyémánt, amely nem csak tündököl – hódít.”" },
+        { category: "Sport", subtitle: "A mozgás dinamikája", text: "„Ahol a kifinomult elegancia és a teljesítmény eggyé válik. A mozgás művészete a jégen.”" },
+        { category: "Costume", subtitle: "A teatralitás határai", text: "„Stílus irodától a reflektorfényig. Karizmatikus jelenlét minden szerepben.”" },
+        { category: "Night", subtitle: "Az éjszaka érzékisége", text: "„Érzéki suttogás az éjszakában. Babydollok olyan nőknek, akik ismerik a csábítás titkait.”" },
+        { category: "Event", subtitle: "A klasszikus elegancia (Chanel stílus)", text: "„Varázslatos esték, formabontó sziluettek. Finoman formált luxus and elegancia találkozása.”" },
+        { category: "Wedding", subtitle: "Fekete-törtfehér dráma", text: "„Kézzel varrt csipke csodák az Atelier falai közül. Mert az esküvőtök sem csak egy nap, hanem örökké emlékezetes sziluett.”" },
+        { category: "Diamond", subtitle: "A totális ragyogás", text: "„Apró csoda, végtelen ragyogás. A gyémánt, amely nem csak tündököl – hódít.”" },
     ];
 
     const stars = [
@@ -28,9 +28,9 @@ export default function SkateNightPage() {
             {/* Hero Section */}
             <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 border-b border-border text-center">
                 <div className="max-w-4xl mx-auto space-y-8">
-                    <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] leading-tight">
+                    <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] leading-tight text-center">
                         SKATE NIGHT by TULIP <br />
-                        <span className="text-5xl md:text-6xl block mt-8 font-waterfall font-light text-brand-fuchsia leading-none">A stílus a jégre költözik!</span>
+                        <span className="text-5xl md:text-6xl block mt-8 font-waterfall font-light text-brand-fuchsia leading-none normal-case tracking-normal">A stílus a jégre költözik!</span>
                     </h1>
 
                     <p className="text-xl md:text-2xl font-rubik font-light text-foreground/80 tracking-wide uppercase text-center">
@@ -45,11 +45,11 @@ export default function SkateNightPage() {
                     </div>
 
                     <div className="flex justify-center">
-                        <div className="inline-block border border-border p-6 mt-16">
-                            <p className="text-lg md:text-xl font-rubik font-medium text-foreground uppercase tracking-widest">
+                        <div className="inline-block border border-border p-6 mt-16 text-center mx-auto">
+                            <p className="text-lg md:text-xl font-rubik font-medium text-foreground uppercase tracking-widest text-center">
                                 2026. április 18. szombat
                             </p>
-                            <p className="text-base text-brand-fuchsia mt-2 tracking-widest uppercase">
+                            <p className="text-base text-brand-fuchsia mt-2 tracking-widest uppercase text-center">
                                 Székesfehérvár, MET Aréna
                             </p>
                         </div>
@@ -86,9 +86,12 @@ export default function SkateNightPage() {
                     <h2 className="text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.2em] mb-16 text-center">6 Titokzatos Világ</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {worlds.map((world, index) => (
-                            <div key={index} className="border border-border p-8 bg-background group hover:border-brand-fuchsia transition-colors relative overflow-hidden text-center md:text-left">
-                                <h3 className="text-xl font-inter font-light uppercase tracking-widest text-foreground mb-4 group-hover:text-brand-fuchsia transition-colors">
-                                    {world.title}
+                            <div key={index} className="border border-border p-8 bg-background group hover:border-brand-fuchsia transition-colors relative overflow-hidden text-center md:text-left text-foreground">
+                                <h3 className="text-xl font-inter font-light uppercase tracking-widest mb-4 group-hover:text-brand-fuchsia transition-colors leading-tight">
+                                    {world.category}
+                                    <span className="block mt-2">
+                                        {world.subtitle}
+                                    </span>
                                 </h3>
                                 <p className="text-base font-rubik font-light text-foreground/80 leading-relaxed italic">
                                     {world.text}
@@ -244,7 +247,7 @@ export default function SkateNightPage() {
                         „Mert amikor a stílus találkozik az együttérzéssel, a jégen csillogó fény valakinek az életében a remény fényévé válik.”
                     </p>
 
-                    <p className="text-lg font-rubik font-light text-foreground mb-12 text-justify">
+                    <p className="text-lg font-rubik font-light text-foreground mb-12 text-center">
                         A jegybevételből karitatív célra ajánlok fel az Alba Bástya Család- és Gyermekjóléti Központ és az ÁGOTA® Alapítvány részére.
                     </p>
 

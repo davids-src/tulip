@@ -36,7 +36,7 @@ export default function PartnereimPage() {
                         return (
                             <div
                                 key={partner.id}
-                                className="group flex flex-col border border-border hover:border-[#d11133] transition-all duration-300"
+                                className="group flex flex-col border border-border hover:border-brand-fuchsia transition-all duration-300"
                             >
                                 {/* Logo terület */}
                                 <div className="relative aspect-square w-full overflow-hidden bg-background flex items-center justify-center p-6">
@@ -55,8 +55,7 @@ export default function PartnereimPage() {
                                 {/* Partner neve alul */}
                                 <div className="border-t border-border px-4 py-3 flex items-center justify-center min-h-[60px]">
                                     <p
-                                        className="text-xs font-inter font-light text-foreground/60 uppercase tracking-widest group-hover:text-[#d11133] transition-colors duration-300 text-justify w-full"
-                                        style={{ textAlignLast: 'center' }}
+                                        className="text-xs font-inter font-light text-foreground/60 uppercase tracking-widest group-hover:text-brand-fuchsia transition-colors duration-300 text-center w-full"
                                     >
                                         {partner.name}
                                     </p>
@@ -74,7 +73,7 @@ export default function PartnereimPage() {
                     </p>
                     <a
                         href="mailto:info@tulip.hu"
-                        className="inline-block border border-[#d11133] text-[#d11133] px-10 py-4 text-sm font-rubik font-light uppercase tracking-widest hover:bg-[#d11133] hover:text-white transition-all duration-300"
+                        className="inline-block border border-brand-fuchsia text-brand-fuchsia px-10 py-4 text-sm font-rubik font-light uppercase tracking-widest hover:bg-brand-fuchsia hover:text-white transition-all duration-300"
                     >
                         Kapcsolatfelvétel
                     </a>
