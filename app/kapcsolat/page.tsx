@@ -27,28 +27,28 @@ export default function ContactPage() {
 
           <div className="space-y-8">
             <div className="flex items-center justify-center space-x-4 p-6 border border-border hover:border-brand-fuchsia transition-colors">
-              <Phone size={28} className="text-brand-fuchsia shrink-0" />
+              <Phone size={24} className="text-brand-fuchsia shrink-0" />
               <a
                 href="tel:+36302543373"
-                className="text-foreground font-rubik font-light hover:text-brand-fuchsia transition-colors text-2xl"
+                className="text-foreground font-rubik font-light hover:text-brand-fuchsia transition-colors text-lg"
               >
                 +36 30 254 3373
               </a>
             </div>
 
             <div className="flex items-center justify-center space-x-4 p-6 border border-border hover:border-brand-fuchsia transition-colors">
-              <Mail size={28} className="text-brand-fuchsia shrink-0" />
+              <Mail size={24} className="text-brand-fuchsia shrink-0" />
               <a
                 href="mailto:info@tulip.hu"
-                className="text-foreground font-rubik font-light hover:text-brand-fuchsia transition-colors text-2xl"
+                className="text-foreground font-rubik font-light hover:text-brand-fuchsia transition-colors text-lg"
               >
                 info@tulip.hu
               </a>
             </div>
 
             <div className="flex items-center justify-center space-x-4 p-6 border border-border hover:border-brand-fuchsia transition-colors group">
-              <MapPin size={28} className="text-brand-fuchsia shrink-0" />
-              <span className="text-foreground font-rubik font-light text-2xl group-hover:text-brand-fuchsia transition-colors">
+              <MapPin size={24} className="text-brand-fuchsia shrink-0" />
+              <span className="text-foreground font-rubik font-light text-lg group-hover:text-brand-fuchsia transition-colors">
                 HU, 8000 Székesfehérvár
               </span>
             </div>

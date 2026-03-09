@@ -30,7 +30,7 @@ export default function FounderIntro() {
                             Történetem
                         </h1>
 
-                        <div className="space-y-6 text-lg md:text-xl font-rubik font-light text-foreground leading-relaxed">
+                        <div className="space-y-6 text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
                             <p>
                                 Oszoli Nikolett vagyok a Tulip márka megálmodója, alapítója és tervezője – női szabó,
                                 könnyűipari mérnök, mérnöktanár, designer és kétgyermekes édesanya –, akit a női elegancia, a
@@ -45,7 +45,7 @@ export default function FounderIntro() {
                                 Tulipánosház vált meghatározó inspirációvá. Ez az örök motívum ma már nemcsak jelképezi,
                                 hanem formálja is a márkám lényegét.
                             </p>
-                            <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
+                            <p className="text-lg font-rubik font-light text-foreground leading-relaxed italic border-l-2 border-brand-fuchsia pl-6 italic">
                                 "A divat számomra sokkal több, mint ruhák tervezése: párbeszéd önmagunkkal, eszköz a női
                                 identitás kifejezésére, és a belső erő megmutatásának természetes formája."
                             </p>

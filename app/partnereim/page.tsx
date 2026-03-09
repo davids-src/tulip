@@ -20,7 +20,7 @@ export default function PartnereimPage() {
                     <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-8">
                         Partnereim
                     </h1>
-                    <p className="text-xl font-rubik font-light text-foreground max-w-2xl mx-auto leading-relaxed text-justify">
+                    <p className="text-lg font-rubik font-light text-foreground max-w-2xl mx-auto leading-relaxed text-justify">
                         A Tulip világát olyan szakemberek és műhelyek támogatják, akik ugyanazt az értékalapú
                         szemléletet képviselik, mint márkánk: a minőséget, a megbízhatóságot és az igényes alkotást.
                     </p>
@@ -67,7 +67,7 @@ export default function PartnereimPage() {
 
                 {/* Záró CTA */}
                 <div className="mt-24 text-center border-t border-border pt-16">
-                    <p className="text-xl font-rubik font-light text-foreground max-w-2xl mx-auto leading-relaxed text-justify mb-10">
+                    <p className="text-lg font-rubik font-light text-foreground max-w-2xl mx-auto leading-relaxed text-justify mb-10">
                         Ha szeretnél partnerként csatlakozni a Tulip világához, írj bizalommal.
                         Nyitottak vagyunk új ötletekre, együttműködésekre, közös alkotásra.
                     </p>

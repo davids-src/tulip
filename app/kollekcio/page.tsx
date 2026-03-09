@@ -15,7 +15,7 @@ export default function CollectionPage() {
           <h1 className="text-3xl md:text-4xl font-inter font-light text-[#d11133] uppercase tracking-[0.35em] mb-8">
             Kollekció
           </h1>
-          <p className="text-xl font-rubik font-light text-foreground max-w-2xl mx-auto leading-relaxed text-justify">
+          <p className="text-lg font-rubik font-light text-foreground max-w-2xl mx-auto leading-relaxed text-center">
             A női elegancia legmagasabb formája, ami nem követi a világot. Irányt mutat neki.
           </p>
         </div>
