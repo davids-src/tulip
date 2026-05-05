@@ -1,98 +1,74 @@
 'use client';
 
+import { useI18n } from '@/lib/i18n';
+
 export default function FounderManifesto() {
-    return (
-        <section className="py-24 bg-background transition-colors">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="max-w-3xl mx-auto space-y-16">
+  const { t, tArray } = useI18n();
+  const items1 = tArray<string>('story.manifesto_items');
+  const items2 = tArray<string>('story.manifesto_items2');
 
-                    {/* Block 1 */}
-                    <div className="space-y-6">
-                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
-                            Mérnöki precizitás és művészi érzékenység
-                        </h2>
-                        <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
-                            Könnyűipari mérnökként az innovációt hozom be a ruházati iparágba: hiszek a modern
-                            technológiákban, az Ipar 4.0 szemléletben, a zero waste tervezésben és a tudatos
-                            anyaghasználatban. Designerként pedig a kézzel rajzolt tervek, a finom részletek,
-                            az egyediség és a nőiesség elegáns megfogalmazása vezérel.
-                        </p>
+  return (
+    <section className="py-24 bg-background transition-colors">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto space-y-16">
 
-                        <div className="border border-border p-8">
-                            <p className="text-lg font-rubik font-normal text-foreground mb-4">
-                                A Tulip darabjai így válnak egyszerre:
-                            </p>
-                            <ul className="space-y-2">
-                                {['elegánssá', 'nőiessé', 'technológiailag átgondolttá', 'egyedivé és kis szériássá'].map((item, index) => (
-                                    <li key={index} className="flex items-center text-lg font-rubik font-light text-brand-fuchsia">
-                                        <span className="text-brand-fuchsia mr-3 text-xs">■</span>
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
-                            Célom, hogy minden nő olyan ruhában léphessen ki a világba, amelyben
-                            magabiztosnak, harmonikusnak és önazonosnak
-                            érzi magát.
-                        </p>
-                    </div>
-
-                    {/* Block 2 */}
-                    <div className="space-y-6">
-                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
-                            Küldetésem
-                        </h2>
-                        <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
-                            A Tulip számomra nem csupán divatmárka, hanem hitvallás: megmutatni, hogy a teremtés,
-                            az értékek megőrzése és az önmegvalósítás képes újraéleszteni egy hanyatló iparágat.
-                        </p>
-                        <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
-                            A hazai könnyűipar megújítása elhivatottságom része. Hiszem, hogy a tudás, az innováció,
-                            a modern szemlélet és a példamutató magatartás képesek visszaadni ennek a szakmának a
-                            méltóságát – és vonzóvá tenni a következő generációk számára is.
-                        </p>
-                    </div>
-
-                    {/* Block 3 */}
-                    <div className="space-y-6">
-                        <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
-                            A nő aki Tulip ruhát visel
-                        </h2>
-                        <div className="border border-border p-8">
-                            <p className="text-lg font-rubik font-light text-foreground mb-4">
-                                A Tulip azoknak a nőknek szól, akik:
-                            </p>
-                            <ul className="space-y-3">
-                                {[
-                                    'harmóniában élnek önmagukkal',
-                                    'szeretik a letisztult, elegáns megjelenést',
-                                    'értékelik az egyediség és a luxus finom jelenlétét',
-                                    'személyiségükben erősek, stílusukban kifinomultak'
-                                ].map((item, index) => (
-                                    <li key={index} className="flex items-center text-lg font-rubik font-light text-brand-fuchsia">
-                                        <span className="text-brand-fuchsia mr-3 text-xs">■</span>
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
-                            A ruháim célja, hogy ezt a belső szépséget és magabiztosságot minden pillanatban láthatóvá tegyék.
-                        </p>
-                    </div>
-
-                    {/* Closing Text */}
-                    <div className="pt-12 border-t border-border space-y-6">
-                        <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
-                            A Tulip erről szól: a női út szépségéről, a tudatos alkotás erejéről és arról a hitről,
-                            hogy értéket teremteni felelősség – de kiváltság is.
-                        </p>
-                    </div>
-
-                </div>
+          <div className="space-y-6">
+            <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
+              {t('story.manifesto_h1')}
+            </h2>
+            <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
+              {t('story.manifesto_p1')}
+            </p>
+            <div className="border border-border p-8">
+              <p className="text-lg font-rubik font-normal text-foreground mb-4">{t('story.manifesto_list_intro')}</p>
+              <ul className="space-y-2">
+                {items1.map((item, i) => (
+                  <li key={i} className="flex items-center text-lg font-rubik font-light text-brand-fuchsia">
+                    <span className="text-brand-fuchsia mr-3 text-xs">■</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-        </section>
-    );
+            <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
+              {t('story.manifesto_p2')}
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
+              {t('story.manifesto_h2')}
+            </h2>
+            <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">{t('story.manifesto_p3')}</p>
+            <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">{t('story.manifesto_p4')}</p>
+          </div>
+
+          <div className="space-y-6">
+            <h2 className="text-2xl font-inter font-light text-brand-fuchsia uppercase tracking-[0.2em] mb-8 border-b border-brand-fuchsia/20 pb-4">
+              {t('story.manifesto_h3')}
+            </h2>
+            <div className="border border-border p-8">
+              <p className="text-lg font-rubik font-light text-foreground mb-4">{t('story.manifesto_list2_intro')}</p>
+              <ul className="space-y-3">
+                {items2.map((item, i) => (
+                  <li key={i} className="flex items-center text-lg font-rubik font-light text-brand-fuchsia">
+                    <span className="text-brand-fuchsia mr-3 text-xs">■</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">{t('story.manifesto_p5')}</p>
+          </div>
+
+          <div className="pt-12 border-t border-border space-y-6">
+            <p className="text-lg font-rubik font-light text-foreground leading-relaxed text-justify">
+              {t('story.manifesto_closing')}
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
 }
