@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { useI18n } from '@/lib/i18n';
 
 interface ColorItem {
-  name: string;
   img: string;
   descKey: string;
   nameKey: string;
